@@ -13,11 +13,11 @@ over building a CMS template, to using it in documentation tools like
 Structure
 ---------
 
-* **css** _Aolder with all CSS files for the template_
+* **css** _Folder with all CSS files for the template_
     + `reset.css` _Reset stylesheet, for creating a identical starting point in all browsers_
     + `base.css` _Layout-independent styles for the HTML elements_
     + `layout.css` _Styles for the responsible layout_
-* **img** _A folder with image resources for the example HTML files_
+* **img** _Folder with image resources for the example HTML files_
 * `template.html` _Empty HTML skeleton referencing the CSS files_
 * `test.reset.html` _Example page, only referencing the reset stylesheet_
 * `test.base.html` _Example page, referencing the reset and base stylesheet_
