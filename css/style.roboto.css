@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300,300italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,200);
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 140%;
+	background-color: #000;
+	color: #D0D8E0;
+}
+
+#frame {
+	background-color: #2D2D2D;
+	-moz-box-shadow:    0 0 14px #204080;
+	-chrome-box-shadow: 0 0 14px #204080;
+	box-shadow:         0 0 14px #204080;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	color: #80B8FF;
+}
+
+h6 {
+	font-weight: 300;
+	text-decoration: none;
+}
+
+em {
+	font-weight: 300;
+	font-style: italic;
+}
+
+strong {
+	font-weight: 400;
+	font-style: italic;
+}
+
+ins
+{
+	background-color: #2D3834;
+	border-color: #385850;
+	color: #B0FFEF;
+}
+
+mark
+{
+	background-color: #42422D;
+	border-color: #585838;
+	color: #FFEEDD;
+	font-weight: 400;
+}
+
+del
+{
+	background-color: #422D3D;
+	border-color: #583848;
+	color: #FFD0E8;
+}
+
+header h1, section, footer, nav, nav.vertical, nav.horizontal, hr {
+	border-color: #3F4F8F;
+}
+
+aside, pre, code, figure, blockquote {
+	border-color: #3F486F;
+	background-color: #222;
+}
+
+blockquote {
+	background-color: #222;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+blockquote cite {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 0.85em;
+}
+
+a {
+	font-weight: 400;
+	color: #FF60C8;
+}
+a:visited {
+	color: #B00080;
+}
+a:hover {
+	color: #FFA0FF;
+}
+a:active {
+	color: #dc143c;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color: #0080ff;
+}
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+	color: #dc143c;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 0.9em;
+	font-weight: 400;
+	background-color: #222;
+	color: #ACF;
+}
+
+pre {
+	background-color: #222;
+}
+
+figure figcaption {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+}
+
+footer {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #6F80AF;
+}
+
+aside {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 0.9em;
+}
+
+table, td, th {
+	border-color: #358;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+thead, tfoot {
+	background-color: #2D3B58;
+}
+thead td, tfoot td, th {
+	font-weight: 700;
+}
