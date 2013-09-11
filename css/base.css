@@ -88,7 +88,6 @@ h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
 	color: #dc143c;
 }
 
-
 img {
 	border: none;
 }
@@ -255,9 +254,9 @@ footer {
 
 aside {
 	float: right;
-	width: 20%;
+	width: 25%;
 	border: 1px #ddd solid;
 	border-radius: 0.5em;
 	margin-left: 1em;
-	padding: 0 0.5em 1em 0.5em;
+	padding: 0 0.75em 1em 0.75em;
 }
