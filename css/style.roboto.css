@@ -3,7 +3,7 @@
 * https://github.com/mastersign/h5smpl
 *
 * Tobias Kiertscher (http://www.mastersign.de)
-* 
+*
 * STYLE ROBOTO
 * Contains a dark theme around the font family "Roboto" from Christian Robertson.
 */
@@ -98,13 +98,13 @@ a {
 	color: #FF60C8;
 }
 a:visited {
-	color: #B00080;
+	color: #D03090;
 }
 a:hover {
 	color: #FFA0FF;
 }
 a:active {
-	color: #dc143c;
+	color: #FFFFFF;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
@@ -156,3 +156,5 @@ thead, tfoot {
 thead td, tfoot td, th {
 	font-weight: 700;
 }
+
+
