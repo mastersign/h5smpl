@@ -191,8 +191,15 @@ blockquote > p:first-child {
 	margin-top: 0;
 }
 
+pre {
+	border: 1px #ddd solid;
+	border-radius: 0.5em;
+	padding: 0.5em 0.75em;
+	white-space: pre;
+	overflow: auto;
+}
 code {
-	font-family: Consolas, "Lucida Console", Courier, monospace;
+	font-family: Consolas, "Courier New", Courier, monospace;
 	font-size: 0.8em;
 	color: #024;
 	background-color: #f6f6f6;
@@ -205,12 +212,52 @@ pre code {
 	border: none;
 	border-radius: none;
 }
-pre {
-	border: 1px #ddd solid;
-	border-radius: 0.5em;
-	padding: 0.5em 0.75em;
-	white-space: pre;
-	overflow: auto;
+
+/* support for syntax highlighting */ 
+code span {
+    font-family: Consolas, "Courier New", Courier, monospace;
+    font-size: 1em;
+}
+code span.kw {
+	font-weight: 600;
+	color: #06D;
+}
+code span.dt {
+	color: #C00;
+}
+code span.dv {
+    color: #00F;
+}
+code span.bn {
+	color: #30B;
+}
+code span.fl {
+	color: #608;
+}
+code span.ch {
+    font-weight: 500;
+    color: #B09;
+}
+code span.st {
+    color: #480;
+}
+code span.ot {
+	color: #066;
+}
+code span.al {
+	color: #080;
+	font-weight: 600;
+}
+code span.fu {
+	color: #444;
+}
+code span.re {
+	color: #A30;
+}
+code span.co {
+    font-weight: 400;
+    font-style: italic;
+    color: #678;
 }
 
 table {
