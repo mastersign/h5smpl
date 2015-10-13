@@ -79,14 +79,23 @@ nav.vertical {
 	border-bottom: none;
 	width: 10em;
 	float: left;
-	padding: 3em 1em 3em 0.5em;
+	padding: 1em 1em 1em 0.5em;
 }
 
 nav.fixed {
 	position: fixed;
 	top: 0;
-	height: 95%;
+	height: 100%;
 	overflow-y: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+nav.fixed > ul {
+	margin-top: 3em;
+	margin-bottom: 2em;
 }
 
 nav.vertical .menu-title, nav.vertical ul {
