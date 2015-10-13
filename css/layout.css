@@ -28,6 +28,7 @@ body {
 
 header {
 	padding-bottom: 1em;
+	margin-left: 13em;
 }
 
 figure {
@@ -56,6 +57,7 @@ nav.horizontal {
 	width: auto;
 	float: none;
 	padding: 0.25em;
+	margin-left: 13em;
 }
 
 nav.horizontal .menu-title, nav.horizontal ul {
@@ -77,11 +79,14 @@ nav.vertical {
 	border-bottom: none;
 	width: 10em;
 	float: left;
-	padding: 1em 1em 1em 0.5em;
+	padding: 3em 1em 1em 0.5em;
 }
 
 nav.fixed {
 	position: fixed;
+	top: 0;
+	height: 95%;
+	overflow-y: auto;
 }
 
 nav.vertical .menu-title, nav.vertical ul {
@@ -104,9 +109,8 @@ nav.vertical li li {
 }
 
 #page {
-	margin: 1em 0.5em 1em 11em;
+	margin: 1em 0.5em 1em 12em;
 	padding-left: 1em;
-	/*border-left: 1px solid #AAA;*/
 }
 
 footer {
@@ -114,9 +118,9 @@ footer {
 	clear: both;
 }
 
-@media screen and (min-width: 960px) and (min-device-width: 960px) {
+@media screen and (min-width: 960px) {
 	#frame {
-		width: 920px;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -126,7 +130,12 @@ footer {
 	#frame {
 		max-width: 720px;
 	}
-
+	header {
+		margin-left: 0;
+	}
+	nav.horizontal {
+		margin: 0;
+	}
 	nav.vertical {
 		width: auto;
 		float: none;
@@ -171,6 +180,7 @@ footer {
 	}
 	header {
 		padding-bottom: 0;
+		margin: 0;
 	}
 	header h1 {
 		margin: 0;
@@ -180,12 +190,16 @@ footer {
 		border-bottom: 1px solid #AAA;
 		text-align: center;
 	}
+	nav.horizontal {
+		margin: 0;
+	}
 	/*
 	nav.vertical .menu-title, nav.horizontal .menu-title {
 		display: none;
 	}
 	*/
 	nav.vertical, nav.horizontal {
+		position: auto;
 		border-bottom: 1px solid #AAA;
 		width: auto;
 		float: none;
