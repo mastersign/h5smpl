@@ -211,6 +211,7 @@ pre code {
 	background-color: inherit;
 	border: none;
 	border-radius: none;
+	padding: 0;
 }
 
 /* support for syntax highlighting */ 
