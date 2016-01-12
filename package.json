@@ -1,0 +1,28 @@
+{
+  "name": "h5smpl",
+  "version": "0.2.0",
+  "description": "An evolving template for a responsive HTML5 page.",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://mastersign@github.com/mastersign/h5smpl.git"
+  },
+  "main": "dist/css/h5smpl.default.css",
+  "keywords": [
+    "HTML5",
+    "Template",
+    "responsive"
+  ],
+  "author": "Tobias Kiertscher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mastersign/h5smpl/issues"
+  },
+  "homepage": "https://github.com/mastersign/h5smpl#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-text-simple": "^0.4.0"
+  }
+}

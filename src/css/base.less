@@ -1,0 +1,382 @@
+/**
+* h5smpl - responsive HTML/CSS template
+* https://github.com/mastersign/h5smpl
+*
+* Tobias Kiertscher (http://www.mastersign.de)
+* 
+* BASE
+* Contains layout independent styling for HTML elements.
+*/
+
+@import "reset";
+@import "vars";
+
+body
+{
+	font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+	line-height: 115%;
+	margin: 1em 1.5em 2em 1.5em;
+	background-color: @page-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0.66em;
+	margin-bottom: 0.33em;
+	line-height: 100%;
+}
+h1, h2, h3, h4 {
+	font-family: Cambria, Times, "Times New Roman", serif;
+	font-weight: normal;
+}
+h1 {
+	font-size: 2.3em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.1em;
+}
+h5, h6 {
+	font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+}
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+}
+h6 {
+	font-size: 1em;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+hr {
+	clear: both;
+}
+
+p, ul, ol, dl, pre, figure, table {
+	margin-top: 1.00em;
+}
+
+a {
+	color: @link-fg;
+	text-decoration: none;
+}
+a:visited {
+	color: @link-visited;
+}
+a:hover {
+	color: @link-hover;
+}
+a:active {
+	color: @link-active;
+}
+
+h1 a, h1 a:visited,
+h2 a, h2 a:visited,
+h3 a, h3 a:visited,
+h4 a, h4 a:visited,
+h5 a, h5 a:visited,
+h6 a, h6 a:visited
+{
+	color: inherit;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	color: @link-hover;
+}
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+	color: @link-active;
+}
+
+img {
+	border: none;
+}
+
+mark {
+	border-radius: @span-border-radius;
+	padding: @span-padding;
+}
+
+ins
+{
+	color: @insert-fg;
+	text-decoration: none;
+}
+
+mark
+{
+	background-color: @mark-bg;
+	border: @mark-border;
+	color: @mark-fg;
+	font-style: normal;
+	font-weight: normal;
+}
+
+del
+{
+	color: @deleted-fg;
+	text-decoration: line-through;
+}
+
+li {
+	margin-left: 2em;
+	ul, ol {
+		margin-top: 0.33em;
+		margin-bottom: 0.33em;
+	}
+}
+ul {
+	li {
+		list-style: disc outside none;
+	}
+	li li {
+		list-style: circle outside none;
+	}
+	li li li {
+		list-style: square outside none;
+	}
+}
+ol {
+	li {
+		list-style: decimal outside none;
+	}
+	li li {
+		list-style: lower-latin outside none;
+	}
+	li li li {
+		list-style: lower-roman outside none;
+	}
+}
+
+dl { }
+dt {
+    font-weight: bold;
+    font-style: italic;
+}
+dd {
+    margin-left: 2em;
+    padding-bottom: 0.5em;
+}
+
+nav {
+	li, ul li, ul li li, ul li li li {
+		list-style: none outside none;
+		margin-left: 0;
+	}
+	li ul, li ol {
+		margin: 0;
+	}
+	li ul li:first-child, li ol li:first-child {
+		margin-top: 0.2em;
+	}
+}
+
+q {
+	quotes: "\201E" "\201C";
+	font-style: italic;
+}
+q:before {
+	content: open-quote;
+}
+q:after {
+	content: close-quote;
+}
+
+blockquote {
+	border: @blockquote-border;
+	border-radius: @blockquote-border-radius;
+	margin: 1em 10% 1em 10%;
+	padding: 0.5em 0.75em;
+	font-style: italic;
+	
+	cite {
+		display: block;
+		text-align: right;
+		margin-top: 0.5em;
+		font-style: normal;
+		font-size: 0.8em;
+	}
+	> p:first-child {
+		margin-top: 0;
+	}
+	blockquote {
+		margin: 1em 0 0.5em 0;
+	}
+}
+
+pre {
+	border: @pre-border;
+	border-radius: @pre-border-radius;
+	padding: 0.5em 0.75em;
+	white-space: pre;
+	overflow: auto;
+}
+code {
+	font-family: Consolas, "Courier New", Courier, monospace;
+	font-size: 0.8em;
+	color: @code-fg;
+	background-color: @code-bg;
+	padding: 0 0.2em;
+	border: @code-border;
+	border-radius: @code-border-radius;
+}
+pre code {
+	background-color: inherit;
+	border: none;
+	border-radius: none;
+	padding: 0;
+}
+
+/* support for syntax highlighting */
+
+code {
+	span {
+		font-family: Consolas, "Courier New", Courier, monospace;
+		font-size: 1em;
+	}
+	span.kw {
+		font-weight: 600;
+		color: @code-sh-kw;
+	}
+	span.dt {
+		color: @code-sh-dt;
+	}
+	span.dv {
+		color: @code-sh-dv;
+	}
+	span.bn {
+		color: @code-sh-bn;
+	}
+	span.fl {
+		color: @code-sh-fl;
+	}
+	span.ch {
+		font-weight: 500;
+		color: @code-sh-ch;
+	}
+	span.st {
+		color: @code-sh-st;
+	}
+	span.ot {
+		color: @code-sh-ot;
+	}
+	span.al {
+		color: @code-sh-al;
+		font-weight: 600;
+	}
+	span.fu {
+		color: @code-sh-fu;
+	}
+	span.re {
+		color: @code-sh-re;
+	}
+	span.co {
+		font-weight: 400;
+		font-style: italic;
+		color: @code-sh-co;
+	}
+}
+
+table {
+	border-collapse: collapse;
+}
+td, th {
+	padding: 0.125em 0.5em 0.125em 0.5em;
+	border: @cell-border;
+}
+thead td, th, tfoot td {
+	font-weight: bold;
+}
+
+thead {
+	background-color: @table-head-bg;
+}
+tfoot {
+	background-color: @table-foot-bg;
+}
+
+figure {
+	border: @figure-border;
+	border-radius: @figure-border-radius;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 0.5em;
+	text-align: @figure-align;
+	overflow: auto;
+}
+figure figcaption {
+	display: block;
+	text-align: @figure-align;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.8em;
+	margin-top: 0.5em;
+}
+
+figure table {
+	width: 100%;
+	margin-top: 0;
+}
+
+section {
+	border-top: @section-sep-border;
+	margin-top: 2em;
+}
+
+footer {
+	margin-top: 2em;
+	text-align: center;
+	color: @footer-fg;
+}
+
+aside {
+	float: right;
+	width: 25%;
+	border: @aside-border;
+	border-radius: @aside-border-radius;
+	margin-left: 1em;
+	padding: 0 0.75em 1em 0.75em;
+}
+
+/* Badge */
+
+.badge {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 0.9em;
+	padding: 0.1em 0.75em 0.2em 0.75em;
+	border: @badge-border-width @badge-border-style @color-bd-default;
+	border-radius: @badge-border-radius;
+}
+
+.default { border-color: @color-bd-default; }
+.highlight { border-color: @color-bd-highlight; }
+.success { border-color: @color-bd-success; }
+.info { border-color: @color-bd-info; }
+.warning { border-color: @color-bd-warning; }
+.error { border-color: @color-bd-error; }
+.passive { border-color: @color-bd-passive; }
+.active { border-color: @color-bd-active; }
+
+/* Colors */
+
+.default, .fg-default { color: @color-fg-default; }
+.highlight, .fg-highlight { color: @color-fg-highlight; }
+.success, .fg-success { color: @color-fg-success; }
+.info, .fg-info { color: @color-fg-info; }
+.warning, .fg-warning { color: @color-fg-warning; }
+.error, .fg-error { color: @color-fg-error; }
+.passive, .fg-passive { color: @color-fg-passive; }
+.active, .fg-active { color: @color-fg-active; }
+.default, .bg-default { background-color: @color-bg-default; }
+.highlight, .bg-highlight { background-color: @color-bg-highlight; }
+.success, .bg-success { background-color: @color-bg-success; }
+.info, .bg-info { background-color: @color-bg-info; }
+.warning, .bg-warning { background-color: @color-bg-warning; }
+.error, .bg-error { background-color: @color-bg-error; }
+.passive, .bg-passive { background-color: @color-bg-passive; }
+.active, .bg-active { background-color: @color-bg-active; }

@@ -3,16 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" href="css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.roboto.css" />
 	<title>Style ROBOTO</title>
 </head>
 <body>
 <div id="frame">
 	<header>
-		<h1>Layout-Test Überschrift</h1>
+		<h1>Style Demo</h1>
 	</header>
 	<nav class="horizontal">
 		<ul>
@@ -30,6 +27,7 @@
 				<ul>
 					<li><a href="#text-logic-labeling">Logische Gestaltung</a></li>
 					<li><a href="#text-revision">Revision</a></li>
+					<li><a href="#text-badges">Badges</a>
 				</ul>
 			</li>
 			<li><a href="#tables">Tabellen</a>
@@ -146,6 +144,20 @@
 		<p>
 			Man kann auch <mark>Teile eines Textes</mark> markieren.
 		</p>
+		<h2 id="text-badges">Badges</h2>
+		<p>
+			Mit einem Badge, kann man den Status eines Abschnitts kennzeichnen.
+		</p>
+		<p>
+			<div class="badge default">Standard</div>
+			<div class="badge success">Erfolg</div>
+			<div class="badge info">Information</div>
+			<div class="badge warning">Warnung</div>
+			<div class="badge error">Fehler</div>
+			<div class="badge passive">Passiv</div>
+			<div class="badge active">Aktiv</div>
+			<div class="badge highlight">Hervorgehoben</div>
+		</p>
 		<h1 id="code">Quellcodes</h1>
 		<p>In einem Text können einzelne <code>Worte</code> als Schlüsselworte ausgezeichnet werden.</p>
 		<p>Mehrere Zeilen Quelltext werden üblicherweise mit einer Nichtproportionalschrift dargestellt:</p>
@@ -155,6 +167,22 @@
     Console.WriteLine(requestHelp ? "Use the livebelt!" : "What do you want?");
     return 0;
 }</code></pre>
+		<p>Quelltext wird auch oft mit Syntaxhighlighting dargestellt.</>
+		<pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- An example with SQL</span>
+<span class="co">-- DDL:</span>
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> demo
+(
+    a <span class="dt">varchar</span>(<span class="dv">255</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,
+    b <span class="dt">double</span> <span class="dt">precision</span>,
+    c <span class="dt">integer</span> <span class="kw">NOT</span> <span class="kw">NULL</span>
+);
+<span class="co">-- DQL:</span>
+<span class="kw">SELECT</span> `a`, `b`, <span class="fu">COUNT</span>(`c`)
+<span class="kw">FROM</span> `demo`
+<span class="kw">WHERE</span> `a` <span class="kw">LIKE</span> <span class="st">&#39;%berlin&#39;</span>
+  <span class="kw">AND</span> `b` &gt; <span class="fl">200.0</span>
+<span class="kw">ORDER</span> <span class="kw">BY</span> `a` <span class="kw">ASC</span>
+<span class="kw">GROUP</span> <span class="kw">BY</span> `a`, `b`;</code></pre>
 	</section>
 	<section>
 		<h1 id="tables">Tabellen</h1>

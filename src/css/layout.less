@@ -11,19 +11,21 @@
 * Expects a DIV with ID 'page', wrapping the main content of the page.
 */
 
+@import "base";
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #F0F0F0;
+	background-color: @body-bg;
 }
 
 #frame {
 	text-align: left;
 	padding: 1em;
-	background-color: #FFFFFF;
-	-moz-box-shadow:    0 0 12px #808080;
-	-chrome-box-shadow: 0 0 12px #808080;
-	box-shadow:         0 0 12px #808080;
+	background-color: @page-bg;
+	-moz-box-shadow:    0 0 12px @page-shaddow;
+	-chrome-box-shadow: 0 0 12px @page-shaddow;
+	box-shadow:         0 0 12px @page-shaddow;
 }
 
 header {
@@ -53,7 +55,7 @@ nav .menu-title {
 /*** NAV HORIZONTAL ***/
 
 nav.horizontal {
-	border-bottom: 1px solid #AAA;
+	border-bottom: @section-sep-border;
 	width: auto;
 	float: none;
 	padding: 0.25em;
@@ -123,7 +125,7 @@ nav.vertical li li {
 }
 
 footer {
-	border-top: 1px solid #AAA;
+	border-top: @section-sep-border;
 	clear: both;
 }
 
@@ -157,7 +159,7 @@ footer {
 	}
 
 	nav.vertical {
-		border-bottom: 1px solid #AAA;
+		border-bottom: @section-sep-border;
 		width: auto;
 		float: none;
 		padding: 0.25em;
@@ -199,7 +201,7 @@ footer {
 		padding-bottom: 0.25em;
 		padding-top: 0.25em;
 		font-size: 1.8em;
-		border-bottom: 1px solid #AAA;
+		border-bottom: @section-sep-border;
 		text-align: center;
 	}
 	nav.horizontal {
@@ -208,7 +210,7 @@ footer {
 
 	nav.vertical, nav.horizontal {
 		position: auto;
-		border-bottom: 1px solid #AAA;
+		border-bottom: @section-sep-border;
 		width: auto;
 		float: none;
 		padding: 0.5em 0em;

@@ -9,7 +9,7 @@
 <body>
 <div id="frame">
 	<header>
-		<h1>Layout-Test Überschrift</h1>
+		<h1>Style Demo</h1>
 	</header>
 	<nav class="horizontal">
 		<ul>
@@ -27,6 +27,7 @@
 				<ul>
 					<li><a href="#text-logic-labeling">Logische Gestaltung</a></li>
 					<li><a href="#text-revision">Revision</a></li>
+					<li><a href="#text-badges">Badges</a>
 				</ul>
 			</li>
 			<li><a href="#tables">Tabellen</a>
@@ -43,7 +44,7 @@
 	<p>Im Folgenden kommen einige Beispiele von verschieden HTML-Elementen.</p>
 	<section>
 		<h1 id="text">Textauszeichnungen</h1>
-		<h2>Logische Gestaltung</h2>
+		<h2 id="text-logic-labelling">Logische Gestaltung</h2>
 		<h3>Hervorhebung</h3>
 		<p>
 			Ein Fließtext kann mit verschiedenen Mitteln logisch gestaltet werden.
@@ -65,7 +66,7 @@
 		<blockquote>
 			Hallo Knut,<br/>
 			<br/>
-			zu deiner Email von gestern:<br/> 
+			zu deiner Email von gestern:<br/>
 			<blockquote>
 				Ich hatte einen schönen Urlaub.
 			</blockquote>
@@ -135,13 +136,27 @@
 			<p>Zusammen mit dem wissenschaftlich gesicherten Nachweis der Existenz von Atomen zu Anfang des 20. Jahrhunderts wurde bemerkt, dass sie nicht unteilbar sind. Vielmehr bestehen sie aus einer Atomhülle mit negativ geladenen Elektronen und einem positiv geladenen Atomkern. Später fand man heraus, dass der Atomkern aus positiv geladenen Protonen und ungeladenen Neutronen aufgebaut ist. Alle Atomsorten, die im neutralen Zustand dieselbe Anzahl Elektronen und damit Protonen besitzen, gehören zu ein und demselben chemischen Element. Die Anzahl der Neutronen in den Atomkernen eines Elements kann verschieden sein, dabei handelt es sich um Isotope des Elements.</p>
 			<p>Elektronen können durch elektrische Anziehung statt an einen auch an mehrere Atomkerne zugleich gebunden sein und dadurch solche Systeme zusammenhalten: Sie bilden Moleküle, die kleinsten Teile, die eine chemische Verbindung darstellen.</p>
 		</details>
-		<h2>Revision</h2>
+		<h2 id="text-revision">Revision</h2>
 		<p>
 			In einem Fließtext können Elemente <ins>ein- bzw. hinzugefügt</ins>
 			oder auch aus dem Text <del>enfternt</del> bzw. <del>gelöscht</del> werden.
 		</p>
 		<p>
 			Man kann auch <mark>Teile eines Textes</mark> markieren.
+		</p>
+		<h2 id="text-badges">Badges</h2>
+		<p>
+			Mit einem Badge, kann man den Status eines Abschnitts kennzeichnen.
+		</p>
+		<p>
+			<div class="badge default">Standard</div>
+			<div class="badge success">Erfolg</div>
+			<div class="badge info">Information</div>
+			<div class="badge warning">Warnung</div>
+			<div class="badge error">Fehler</div>
+			<div class="badge passive">Passiv</div>
+			<div class="badge active">Aktiv</div>
+			<div class="badge highlight">Hervorgehoben</div>
 		</p>
 		<h1 id="code">Quellcodes</h1>
 		<p>In einem Text können einzelne <code>Worte</code> als Schlüsselworte ausgezeichnet werden.</p>
@@ -152,10 +167,26 @@
     Console.WriteLine(requestHelp ? "Use the livebelt!" : "What do you want?");
     return 0;
 }</code></pre>
+		<p>Quelltext wird auch oft mit Syntaxhighlighting dargestellt.</>
+		<pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- An example with SQL</span>
+<span class="co">-- DDL:</span>
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> demo
+(
+    a <span class="dt">varchar</span>(<span class="dv">255</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,
+    b <span class="dt">double</span> <span class="dt">precision</span>,
+    c <span class="dt">integer</span> <span class="kw">NOT</span> <span class="kw">NULL</span>
+);
+<span class="co">-- DQL:</span>
+<span class="kw">SELECT</span> `a`, `b`, <span class="fu">COUNT</span>(`c`)
+<span class="kw">FROM</span> `demo`
+<span class="kw">WHERE</span> `a` <span class="kw">LIKE</span> <span class="st">&#39;%berlin&#39;</span>
+  <span class="kw">AND</span> `b` &gt; <span class="fl">200.0</span>
+<span class="kw">ORDER</span> <span class="kw">BY</span> `a` <span class="kw">ASC</span>
+<span class="kw">GROUP</span> <span class="kw">BY</span> `a`, `b`;</code></pre>
 	</section>
 	<section>
 		<h1 id="tables">Tabellen</h1>
-		<h2>Einfache Tabelle</h2>
+		<h2 id="tables-simple">Einfache Tabelle</h2>
 		<p>Hier kurz eine einfache Tabelle mit wenig Inhalt.</p>
 		<table>
 			<tr><td></td><th>A</th><th>B</th></tr>
@@ -163,7 +194,7 @@
 			<tr><th>Y</th><td>10</td><td>11</td></tr>
 		</table>
 		<p>Aber Tabellen können noch mehr...</p>
-		<h2>Kopf- und Fußzeilen</h2>
+		<h2 id="tables-header-footer">Kopf- und Fußzeilen</h2>
 		<p>Kopf- und Fußzeilen verleihen einer Tabelle mehr Übersichtlichkeit.</p>
 		<figure>
 			<table>
