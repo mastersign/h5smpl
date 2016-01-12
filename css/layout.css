@@ -28,6 +28,7 @@ body {
 
 header {
 	padding-bottom: 1em;
+	margin-left: 13em;
 }
 
 figure {
@@ -56,6 +57,7 @@ nav.horizontal {
 	width: auto;
 	float: none;
 	padding: 0.25em;
+	margin-left: 13em;
 }
 
 nav.horizontal .menu-title, nav.horizontal ul {
@@ -82,6 +84,18 @@ nav.vertical {
 
 nav.fixed {
 	position: fixed;
+	top: 0;
+	height: 100%;
+	overflow-y: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+nav.fixed > ul {
+	margin-top: 3em;
+	margin-bottom: 2em;
 }
 
 nav.vertical .menu-title, nav.vertical ul {
@@ -104,9 +118,8 @@ nav.vertical li li {
 }
 
 #page {
-	margin: 1em 0.5em 1em 11em;
+	margin: 1em 0.5em 1em 12em;
 	padding-left: 1em;
-	/*border-left: 1px solid #AAA;*/
 }
 
 footer {
@@ -114,9 +127,9 @@ footer {
 	clear: both;
 }
 
-@media screen and (min-width: 960px) and (min-device-width: 960px) {
+@media screen and (min-width: 960px) {
 	#frame {
-		width: 920px;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -126,7 +139,12 @@ footer {
 	#frame {
 		max-width: 720px;
 	}
-
+	header {
+		margin-left: 0;
+	}
+	nav.horizontal {
+		margin: 0;
+	}
 	nav.vertical {
 		width: auto;
 		float: none;
@@ -145,17 +163,20 @@ footer {
 		padding: 0.25em;
 	}
 
-	nav.vertical .menu-title, nav.vertical ul {
-		display: inline-block;
-	}
-
-	nav.vertical .menu-title {
+	nav.vertical > .menu-title {
 		padding: 0 0.5em 0 0.25em;
 	}
 
-	nav.vertical li {
-		display: inline-block;
-		padding: 0 0.5em 0 0.5em;
+	nav.vertical > ul {
+		margin: 0.5em;
+	}
+
+	nav.vertical > ul ul {
+		display: block;
+	}
+
+	nav.vertical > ul ul li {
+		display: inline;
 	}
 
 	#page {
@@ -171,6 +192,7 @@ footer {
 	}
 	header {
 		padding-bottom: 0;
+		margin: 0;
 	}
 	header h1 {
 		margin: 0;
@@ -180,16 +202,18 @@ footer {
 		border-bottom: 1px solid #AAA;
 		text-align: center;
 	}
-	/*
-	nav.vertical .menu-title, nav.horizontal .menu-title {
-		display: none;
+	nav.horizontal {
+		margin: 0;
 	}
-	*/
+
 	nav.vertical, nav.horizontal {
+		position: auto;
 		border-bottom: 1px solid #AAA;
 		width: auto;
 		float: none;
 		padding: 0.5em 0em;
+	}
+	nav.horizontal {
 		text-align: center;
 	}
 
@@ -201,7 +225,7 @@ footer {
 		padding: 0 0 0.5em 0;
 	}
 
-	nav.vertical li, nav.horizontal li {
+	nav.vertical li, nav.vertical > ul ul li, nav.horizontal li {
 		display: block;
 		padding: 0 0 0.25em 0;
 	}
