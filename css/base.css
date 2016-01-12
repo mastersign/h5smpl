@@ -157,9 +157,15 @@ dd {
     padding-bottom: 0.5em;
 }
 
-nav li {
+nav li, nav ul li, nav ul li li, nav ul li li li {
 	list-style: none outside none;
 	margin-left: 0;
+}
+nav li ul, nav li ol {
+	margin: 0;
+}
+nav li ul li:first-child, nav li ol li:first-child {
+	margin-top: 0.2em;
 }
 
 q {
