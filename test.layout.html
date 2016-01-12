@@ -25,8 +25,18 @@
 	<nav class="vertical fixed">
 		<ul>
 			<li><a href="#page">Seitenanfang</a></li>
-			<li><a href="#text">Textauszeichnungen</a></li>
-			<li><a href="#tables">Tabellen</a></li>
+			<li><a href="#text">Textauszeichnungen</a>
+				<ul>
+					<li><a href="#text-logic-labeling">Logische Gestaltung</a></li>
+					<li><a href="#text-revision">Revision</a></li>
+				</ul>
+			</li>
+			<li><a href="#tables">Tabellen</a>
+				<ul>
+					<li><a href="#tables-simple">Einfache Tabelle</a></li>
+					<li><a href="#tables-header-footer">Kopf- und Fußzeile</a></li>
+				</ul>
+			</li>
 			<li><a href="#figures">Grafiken</a></li>
 		</ul>
 	</nav>
@@ -35,7 +45,7 @@
 	<p>Im Folgenden kommen einige Beispiele von verschieden HTML-Elementen.</p>
 	<section>
 		<h1 id="text">Textauszeichnungen</h1>
-		<h2>Logische Gestaltung</h2>
+		<h2 id="text-logic-labelling">Logische Gestaltung</h2>
 		<h3>Hervorhebung</h3>
 		<p>
 			Ein Fließtext kann mit verschiedenen Mitteln logisch gestaltet werden.
@@ -50,6 +60,31 @@
 		<blockquote>
 			Überlege einmal, bevor du gibst, zweimal, bevor du annimmst, und tausendmal, bevor du verlangst.
 			<cite>Marie von Ebner-Eschenbach</cite>
+		</blockquote>
+		<p>
+			Durch Email-Antworten entstehen manchmal verschachtelte Zitate:
+		</p>
+		<blockquote>
+			Hallo Knut,<br/>
+			<br/>
+			zu deiner Email von gestern:<br/>
+			<blockquote>
+				Ich hatte einen schönen Urlaub.
+			</blockquote>
+			Das freut mich, ich konnte mich auch erholen.
+			<blockquote>
+				Hast du Zeit für ein Meeting?<br/>
+				<br/>
+				Wolfgang will sich nochmal mit uns treffen.<br/>
+				<br/>
+				Wolfgang:
+				<blockquote>
+					Mit der Aussage vom letzten Donnerstag habe ich Schwierigkeiten.<br/>
+					Können wir uns nochmal zusammensetzen?
+				</blockquote>
+			</blockquote>
+			Bis bald,<br/>
+			Gustav
 		</blockquote>
 		<h3>Listen</h3>
 		<p>Listen sind sehr gut geeignet, um Stichpunkte oder Aufzählungen darzustellen.</p>
@@ -102,7 +137,7 @@
 			<p>Zusammen mit dem wissenschaftlich gesicherten Nachweis der Existenz von Atomen zu Anfang des 20. Jahrhunderts wurde bemerkt, dass sie nicht unteilbar sind. Vielmehr bestehen sie aus einer Atomhülle mit negativ geladenen Elektronen und einem positiv geladenen Atomkern. Später fand man heraus, dass der Atomkern aus positiv geladenen Protonen und ungeladenen Neutronen aufgebaut ist. Alle Atomsorten, die im neutralen Zustand dieselbe Anzahl Elektronen und damit Protonen besitzen, gehören zu ein und demselben chemischen Element. Die Anzahl der Neutronen in den Atomkernen eines Elements kann verschieden sein, dabei handelt es sich um Isotope des Elements.</p>
 			<p>Elektronen können durch elektrische Anziehung statt an einen auch an mehrere Atomkerne zugleich gebunden sein und dadurch solche Systeme zusammenhalten: Sie bilden Moleküle, die kleinsten Teile, die eine chemische Verbindung darstellen.</p>
 		</details>
-		<h2>Revision</h2>
+		<h2 id="text-revision">Revision</h2>
 		<p>
 			In einem Fließtext können Elemente <ins>ein- bzw. hinzugefügt</ins>
 			oder auch aus dem Text <del>enfternt</del> bzw. <del>gelöscht</del> werden.
@@ -122,7 +157,7 @@
 	</section>
 	<section>
 		<h1 id="tables">Tabellen</h1>
-		<h2>Einfache Tabelle</h2>
+		<h2 id="tables-simple">Einfache Tabelle</h2>
 		<p>Hier kurz eine einfache Tabelle mit wenig Inhalt.</p>
 		<table>
 			<tr><td></td><th>A</th><th>B</th></tr>
@@ -130,7 +165,7 @@
 			<tr><th>Y</th><td>10</td><td>11</td></tr>
 		</table>
 		<p>Aber Tabellen können noch mehr...</p>
-		<h2>Kopf- und Fußzeilen</h2>
+		<h2 id="tables-header-footer">Kopf- und Fußzeilen</h2>
 		<p>Kopf- und Fußzeilen verleihen einer Tabelle mehr Übersichtlichkeit.</p>
 		<figure>
 			<table>
@@ -178,5 +213,4 @@
 		<p>In der Fußzeile steht häufig ein Copyright-Vermerk.</p>
 	</footer>
 </div>
-</body>
 </html>
