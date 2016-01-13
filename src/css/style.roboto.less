@@ -14,31 +14,30 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,200);
 
+@body-bg: #000;
+@page-bg: #2D2D2D;
+@page-shaddow: #204080;
+@fg: #D0D8E0;
+@headline-color: #80B8FF;
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 140%;
-	background-color: #000;
-	color: #D0D8E0;
 }
 
-#frame {
-	background-color: #2D2D2D;
-	-moz-box-shadow:    0 0 14px #204080;
-	-chrome-box-shadow: 0 0 14px #204080;
-	box-shadow:         0 0 14px #204080;
+h1, h2, h3, h4, h5, h6, figure figcaption, footer, aside, table, blockquote {
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
-	color: #80B8FF;
+	text-decoration: none;
 }
 
 h6 {
 	font-weight: 300;
-	text-decoration: none;
 }
 
 em {
@@ -51,110 +50,76 @@ strong {
 	font-style: italic;
 }
 
-ins
-{
-	background-color: #2D3834;
-	border-color: #385850;
-	color: #B0FFEF;
-}
+@insert-fg: #90FFCF;
+@deleted-fg: #E080C0;
+@mark-border: @span-border-width @span-border-style mix(@page-bg, @mark-bg, 60%);
 
 mark
 {
-	background-color: #42422D;
-	border-color: #585838;
-	color: #FFEEDD;
 	font-weight: 400;
 }
 
-del
-{
-	background-color: #422D3D;
-	border-color: #583848;
-	color: #FFD0E8;
-}
+@section-sep-border: 1px solid #3F486F;
+@block-border: @section-sep-border;
+@block-bg: #222;
 
 header h1, section, footer, nav, nav.vertical, nav.horizontal, hr {
 	border-color: #3F4F8F;
 }
 
-aside, pre, code, figure, blockquote {
-	border-color: #3F486F;
-	background-color: #222;
-}
-
 blockquote {
-	background-color: #222;
-	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
 blockquote cite {
-	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 0.85em;
 }
 
 a {
 	font-weight: 400;
-	color: #FF60C8;
 }
-a:visited {
-	color: #D03090;
-}
-a:hover {
-	color: #FFA0FF;
-}
-a:active {
-	color: #FFFFFF;
-}
-
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-	color: #0080ff;
-}
-h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
-	color: #dc143c;
-}
+@link-fg: #FF50C8;
 
 code {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 0.9em;
 	font-weight: 400;
-	background-color: #222;
-	color: #ACF;
 }
-
-pre {
-	background-color: #222;
-}
+@code-fg: #ACF;
+@code-sh-kw: #48F;
+@code-sh-fu: #2A9;
+@code-sh-dt: #D6A;
+@code-sh-bn: #56F;
+@code-sh-dv: #86F;
+@code-sh-fl: #B6F;
+@code-sh-ch: #AC0;
+@code-sh-st: #4B0;
+@code-sh-co: #89B;
+@code-sh-ot: #89B;
+@code-sh-al: #D00;
+@code-sh-er: #D02;
+@code-sh-re: #A60;
 
 figure figcaption {
-	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 0.9em;
 }
 
 footer {
-	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: 300;
 	font-size: 1em;
 	color: #6F80AF;
 }
 
 aside {
-	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 0.9em;
 }
 
 table, td, th {
-	border-color: #358;
-	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
 }
 
-thead, tfoot {
-	background-color: #2D3B58;
-}
 thead td, tfoot td, th {
 	font-weight: 700;
 }
