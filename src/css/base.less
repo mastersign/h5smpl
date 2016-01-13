@@ -59,7 +59,7 @@ hr {
 	clear: both;
 }
 
-p, ul, ol, dl, pre, figure, table {
+p, ul, ol, dl, pre, figure, table, summary {
 	margin-top: 1.00em;
 }
 
@@ -359,6 +359,21 @@ aside {
 	border-radius: @aside-border-radius;
 	margin-left: 1em;
 	padding: 0 0.75em 1em 0.75em;
+}
+
+details {
+	color: mix(@page-bg, @fg, 33%);
+	padding-left: 1em;
+	border-left: @section-sep-border;
+	p {
+		margin-top: 0.5em;
+	}
+	summary {
+		display: block;
+		font-weight: 500;
+		color: @fg;
+		padding-bottom: 0.5em;
+	}
 }
 
 /* Badge */
