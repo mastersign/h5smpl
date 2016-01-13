@@ -30,7 +30,7 @@ body {
 
 header {
 	padding-bottom: 1em;
-	margin-left: 13em;
+	margin-left: @side-menu-width;
 }
 
 figure {
@@ -59,20 +59,30 @@ nav.horizontal {
 	width: auto;
 	float: none;
 	padding: 0.25em;
-	margin-left: 13em;
-}
+	margin-left: @side-menu-width;
+	margin-right: 0.5em;
+	.menu-title, ul {
+		display: inline-block;
+	}
 
-nav.horizontal .menu-title, nav.horizontal ul {
-	display: inline-block;
-}
+	.menu-title {
+		padding: 0 0.5em 0 0.25em;
+	}
 
-nav.horizontal .menu-title {
-	padding: 0 0.5em 0 0.25em;
-}
-
-nav.horizontal li {
-	display: inline-block;
-	padding: 0 0.5em 0 0.5em;
+	li {
+		display: inline-block;
+		// padding: 0 0.5em 0 0.5em;
+	}
+	li:first-of-type {
+		padding-left: 0.5em;
+	}
+	li + li {
+		margin-left: 0;
+	}
+	li + li:before {
+		content: '\00A0\2022\00A0\00A0';
+		color: mix(@page-bg, @link-fg, 50%);
+	}
 }
 
 /*** NAV VERTICAL ***/
@@ -82,7 +92,24 @@ nav.vertical {
 	width: 10em;
 	float: left;
 	padding: 1em 1em 1em 0.5em;
+	.menu-title, ul {
+		display: block;
+	}
+	.menu-title {
+		padding: 0 0 0.5em 0;
+	}
+	li {
+		display: block;
+		padding: 0 0 0.25em 0;
+		li {
+			margin-left: @nested-menu-ident;
+			font-size: small;
+			padding: 0;
+		}
+	}
 }
+
+/*** NAV FIXED ***/
 
 nav.fixed {
 	position: fixed;
@@ -100,27 +127,10 @@ nav.fixed > ul {
 	margin-bottom: 2em;
 }
 
-nav.vertical .menu-title, nav.vertical ul {
-	display: block;
-}
-
-nav.vertical .menu-title {
-	padding: 0 0 0.5em 0;
-}
-
-nav.vertical li {
-	display: block;
-	padding: 0 0 0.25em 0;
-}
-
-nav.vertical li li {
-	margin-left: 0.75em;
-	font-size: small;
-	padding: 0;
-}
+@page-margin-left: @side-menu-width - 1em;
 
 #page {
-	margin: 1em 0.5em 1em 12em;
+	margin: 1em 0.5em 1em @page-margin-left;
 	padding-left: 1em;
 }
 
@@ -147,38 +157,41 @@ footer {
 	nav.horizontal {
 		margin: 0;
 	}
-	nav.vertical {
-		width: auto;
-		float: none;
-		margin: 0;
-		padding: 0.25em;
-	}
-
-	nav.fixed {
-		position: relative;
-	}
 
 	nav.vertical {
 		border-bottom: @section-sep-border;
 		width: auto;
 		float: none;
 		padding: 0.25em;
+		margin: 0;
 	}
-
 	nav.vertical > .menu-title {
 		padding: 0 0.5em 0 0.25em;
 	}
 
-	nav.vertical > ul {
-		margin: 0.5em;
+	nav.fixed {
+		position: relative;
 	}
 
-	nav.vertical > ul ul {
-		display: block;
-	}
-
-	nav.vertical > ul ul li {
-		display: inline;
+	@media (min-width: 480px), (orientation: landscape) {
+		nav.vertical > ul {
+			margin: 0.5em;
+			ul {
+				display: block;
+				li {
+					display: inline;
+					margin-right: 0;
+					padding: 0;
+				}
+				li + li {
+					margin-left: 0;
+				}
+				li + li:before {
+					content: '\00A0\2022\00A0\00A0';
+					color: mix(@page-bg, @link-fg, 50%);
+				}
+			}
+		}
 	}
 
 	#page {
@@ -206,6 +219,17 @@ footer {
 	}
 	nav.horizontal {
 		margin: 0;
+		text-align: center;
+		li, li:first-of-type {
+			display: block;
+			padding: 0 0 0.15em 0;
+		}
+		li + li {
+			margin-left: 0;
+		}
+		li + li:before {
+			content: none;
+		}
 	}
 
 	nav.vertical, nav.horizontal {
@@ -215,21 +239,18 @@ footer {
 		float: none;
 		padding: 0.5em 0em;
 	}
-	nav.horizontal {
-		text-align: center;
+
+	nav.vertical ul {
+		display: block;
 	}
 
-	nav.vertical .menu-title, nav.vertical ul, nav.horizontal .menu-title {
-		display: block;
+	nav.vertical > ul {
+		margin: 0.5em;
 	}
 
 	nav.vertical .menu-title, nav.horizontal .menu-title {
-		padding: 0 0 0.5em 0;
-	}
-
-	nav.vertical li, nav.vertical > ul ul li, nav.horizontal li {
 		display: block;
-		padding: 0 0 0.15em 0;
+		padding: 0 0 0.5em 0;
 	}
 
 	aside {

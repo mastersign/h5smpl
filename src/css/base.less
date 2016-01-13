@@ -63,6 +63,16 @@ p, ul, ol, dl, pre, figure, table {
 	margin-top: 1.00em;
 }
 
+em {
+	font-style: italic;
+	font-weight: 400;
+}
+
+strong {
+	font-style: normal;
+	font-weight: 600;
+}
+
 a {
 	color: @link-fg;
 	text-decoration: none;
@@ -151,9 +161,11 @@ ol {
 	}
 }
 
-dl { }
+dl { 
+	font-weight: 300;
+}
 dt {
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
 }
 dd {
@@ -239,10 +251,11 @@ pre code {
 code {
 	span {
 		font-family: Consolas, "Courier New", Courier, monospace;
+		font-weight: 400;
 		font-size: 1em;
 	}
 	span.kw {
-		font-weight: 600;
+		font-weight: 700;
 		color: @code-sh-kw;
 	}
 	span.fu {
@@ -261,14 +274,13 @@ code {
 		color: @code-sh-fl;
 	}
 	span.ch {
-		font-weight: 500;
 		color: @code-sh-ch;
 	}
 	span.st {
 		color: @code-sh-st;
 	}
 	span.co {
-		font-weight: 400;
+		font-weight: 300;
 		font-style: italic;
 		color: @code-sh-co;
 	}
@@ -277,11 +289,11 @@ code {
 	}
 	span.al {
 		color: @code-sh-al;
-		font-weight: 600;
+		font-weight: 700;
 	}
 	span.er {
 		color: @code-sh-er;
-		font-weight: 600;
+		font-weight: 700;
 	}
 	span.re {
 		color: @code-sh-re;
@@ -331,7 +343,7 @@ figure table {
 
 section {
 	border-top: @section-sep-border;
-	margin-top: 2em;
+	margin-top: 1.5em;
 }
 
 footer {
