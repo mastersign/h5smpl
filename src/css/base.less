@@ -17,12 +17,14 @@ body
 	line-height: 115%;
 	margin: 1em 1.5em 2em 1.5em;
 	background-color: @page-bg;
+	color: @fg;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0.66em;
 	margin-bottom: 0.33em;
 	line-height: 100%;
+	color: @headline-color;
 }
 h1, h2, h3, h4 {
 	font-family: Cambria, Times, "Times New Roman", serif;
@@ -96,11 +98,6 @@ img {
 	border: none;
 }
 
-mark {
-	border-radius: @span-border-radius;
-	padding: @span-padding;
-}
-
 ins
 {
 	color: @insert-fg;
@@ -109,8 +106,10 @@ ins
 
 mark
 {
-	background-color: @mark-bg;
+	background-color: mix(@page-bg, @mark-bg, 80%);
 	border: @mark-border;
+	border-radius: @span-border-radius;
+	padding: @span-padding;
 	color: @mark-fg;
 	font-style: normal;
 	font-weight: normal;
@@ -184,6 +183,10 @@ q:before {
 }
 q:after {
 	content: close-quote;
+}
+
+aside, pre, figure, blockquote {
+	background-color: @block-bg;
 }
 
 blockquote {

@@ -14,46 +14,47 @@
 @page-shaddow: #808080;
 
 @fg: #000;
+@headline-color: @fg;
 @footer-fg: #888;
 @section-sep-border: 1px solid #AAA;
 
 @color-default: hsl(200, 10%, 60%);
-@color-fg-default: darken(@color-default, 40%);
+@color-fg-default: mix(@fg, @color-default, 70%);
 @color-bd-default: @color-default;
-@color-bg-default: lighten(@color-default, 30%);
-@color-highlight: hsl(180, 60%, 40%);
-@color-fg-highlight: darken(@color-highlight, 40%);
+@color-bg-default: mix(@page-bg, @color-default, 70%);
+@color-highlight: hsl(180, 100%, 42%);
+@color-fg-highlight: mix(@fg, @color-highlight, 70%);
 @color-bd-highlight: @color-highlight;
-@color-bg-highlight: lighten(@color-highlight, 30%);
-@color-success: hsl(105, 60%, 35%);
-@color-fg-success: darken(@color-success, 40%);
+@color-bg-highlight: mix(@page-bg, @color-highlight, 70%);
+@color-success: hsl(105, 100%, 40%);
+@color-fg-success: mix(@fg, @color-success, 70%);
 @color-bd-success: @color-success;
-@color-bg-success: lighten(@color-success, 30%);
-@color-info: hsl(55, 90%, 40%);
-@color-fg-info: darken(@color-info, 40%);
+@color-bg-success: mix(@page-bg, @color-success, 70%);
+@color-info: hsl(55, 100%, 47%);
+@color-fg-info: mix(@fg, @color-info, 70%);
 @color-bd-info: @color-info;
-@color-bg-info: lighten(@color-info, 40%);
-@color-warning: hsl(30, 90%, 40%);
-@color-fg-warning: darken(@color-warning, 40%);
+@color-bg-info: mix(@page-bg, @color-info, 70%);
+@color-warning: hsl(30, 100%, 48%);
+@color-fg-warning: mix(@fg, @color-warning, 70%);
 @color-bd-warning: @color-warning;
-@color-bg-warning: lighten(@color-warning, 30%);
-@color-error: hsl(355, 70%, 45%);
-@color-fg-error: darken(@color-error, 40%);
+@color-bg-warning: mix(@page-bg, @color-warning, 70%);
+@color-error: hsl(355, 90%, 48%);
+@color-fg-error: mix(@fg, @color-error, 70%);
 @color-bd-error: @color-error;
-@color-bg-error: lighten(@color-error, 30%);
+@color-bg-error: mix(@page-bg, @color-error, 70%);
 @color-passive: hsl(0, 0%, 65%);
-@color-fg-passive: darken(@color-passive, 40%);
-@color-bd-passive: @color-passive;
-@color-bg-passive: lighten(@color-passive, 30%);
-@color-active: hsl(205, 70%, 45%);
-@color-fg-active: darken(@color-active, 40%);
+@color-fg-passive: mix(@fg, @color-passive, 30%);
+@color-bd-passive: mix(@page-bg, @color-passive, 50%);
+@color-bg-passive: mix(@page-bg, @color-passive, 80%);
+@color-active: hsl(205, 100%, 45%);
+@color-fg-active: mix(@fg, @color-active, 70%);
 @color-bd-active: @color-active;
-@color-bg-active: lighten(@color-active, 30%);
+@color-bg-active: mix(@page-bg, @color-active, 70%);
 
 @link-fg: #0850ff;
-@link-visited: desaturate(@link-fg, 50%);
-@link-hover: lighten(saturate(@link-fg, 20%), 15%);
-@link-active: #DC143C;
+@link-visited: mix(@page-bg, @link-fg, 30%);
+@link-hover: mix(@fg, saturate(@link-fg, 50%), 50%);
+@link-active: spin(@link-fg, 100);
 
 @span-border-radius: 0.25em;
 @span-padding: 0 0.2em;
@@ -62,12 +63,13 @@
 
 @insert-fg: #093;
 @deleted-fg: #F44;
-@mark-bg: #FF9;
-@mark-border: @span-border-width @span-border-style #DD6;
-@mark-fg: #000;
+@mark-bg: #FF0;
+@mark-border: @span-border-width @span-border-style mix(@page-bg, @mark-bg, 30%);
+@mark-fg: @fg;
 
 @block-border: 1px solid #DDD;
 @block-border-radius: 0.5em;
+@block-bg: @page-bg;
 
 @blockquote-border: @block-border;
 @blockquote-border-radius: @block-border-radius;
@@ -76,8 +78,8 @@
 @pre-border-radius: @block-border-radius;
 
 @code-fg: #024;
-@code-bg: #F6F6F6;
-@code-border: @span-border-width @span-border-style #E4E4E4;
+@code-bg: mix(@fg, @page-bg, 5%);
+@code-border: @span-border-width @span-border-style mix(@code-fg, @page-bg, 20%);
 @code-border-radius: @span-border-radius;
 
 @code-sh-kw: #06D;
@@ -95,8 +97,8 @@
 @code-sh-re: #A60;
 
 @cell-border: @block-border;
-@table-head-bg: @body-bg;
-@table-foot-bg: @body-bg;
+@table-head-bg: mix(@fg, @page-bg, 5%);
+@table-foot-bg: @table-head-bg;
 
 @figure-border: @block-border;
 @figure-border-radius: @block-border-radius;
