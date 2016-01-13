@@ -1,0 +1,65 @@
+@import "layout";
+
+/**
+* h5smpl - responsive HTML/CSS template
+* https://github.com/mastersign/h5smpl
+*
+* Tobias Kiertscher (http://www.mastersign.de)
+*
+* STYLE METRO
+*/
+
+@body-bg: #AAA;
+@page-shaddow: #AAA;
+
+@block-border-radius: 0;
+@span-border-radius: 0;
+@badge-border-radius: 0;
+
+body {
+	font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif;
+	font-size: 11.5pt;
+	line-height: 130%;
+}
+
+h1, h2, h3, h4, aside, footer {
+	font-family: "Segoe UI", "Calibri Light", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+}
+h5, h6 {
+	font-weight: 700;
+}
+h5 {
+	text-decoration: underline;
+}
+h6 {
+	text-decoration: none;
+}
+
+figure figcaption {
+	font-weight: 400;
+	font-size: 10.5pt;
+}
+
+code {
+	font-family: Consolas, "Courier New", Courier, monospace;
+	line-height: 110%;
+}
+
+.badge {
+	font-weight: 300;
+	font-size: 12pt;
+	padding: 0.33em 0.66em;
+}
+.default, .highlight, .success, .info, .warning, .error, .active, .passive {
+	border: none;
+	color: @page-bg;
+}
+.default { background-color: @color-default; }
+.highlight { background-color: @color-highlight; }
+.success { background-color: @color-success; }
+.info { background-color: @color-info; }
+.warning { background-color: @color-warning; }
+.error { background-color: @color-error; }
+.active { background-color: @color-active; }
+.passive { background-color: @color-passive; }
