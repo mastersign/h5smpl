@@ -1,0 +1,140 @@
+@import "layout";
+
+/**
+* h5smpl - responsive HTML/CSS template
+* https://github.com/mastersign/h5smpl
+*
+* Tobias Kiertscher (http://www.mastersign.de)
+*
+* STYLE SERIOUS
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700,700italic);
+
+body {
+	font-family: "Crimson Text", "Times New Roman", Times, serif;
+	font-weight: 400;
+	font-size: 12.5pt;
+	line-height: 125%;
+}
+
+@body-bg: hsl(40, 15%, 85%);
+@page-bg: hsl(40, 20%, 97%);
+@fg: hsl(40, 25%, 10%);
+@block-bg: #fff;
+@block-border-radius: 0;
+@block-border: 1px solid mix(@body-bg, @page-bg, 33%);
+
+@side-menu-width: 12em;
+@nested-menu-ident: 1.25em;
+
+@link-fg: #06A;
+
+@code-fg: #444;
+@code-sh-kw: #007020;
+@code-sh-fu: #06287E;
+@code-sh-dt: #902000;
+@code-sh-bn: #40A070;
+@code-sh-dv: #40A070;
+@code-sh-fl: #40A070;
+@code-sh-ch: #4070A0;
+@code-sh-st: #4070A0;
+@code-sh-co: #60A0B0;
+@code-sh-ot: #60A0B0;
+@code-sh-al: #F00;
+@code-sh-er: #F00;
+@code-sh-re: @code-fg;
+
+p {
+	margin-bottom: 0;
+}
+p + p {
+	margin-top: 0;
+	text-indent: 1.75em;
+}
+p + p.badge {
+	text-indent: 0;
+}
+details {
+	margin-top: 1em;
+}
+
+strong {
+	font-weight: 600;
+	font-style: normal;
+}
+
+blockquote, aside, figure, footer, nav > ul {
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+
+nav > ul {
+	line-height: 120%;
+}
+
+pre {
+	line-height: 105%;
+}
+
+blockquote {
+	font-style: normal;
+	border-left-width: 0.5em;
+}
+
+header h1 {
+	font-family: "PT Sans Caption", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	margin-top: 1.33em;
+}
+h1 {
+	font-size: 2.0em;
+}
+h2 {
+	font-size: 1.7em;
+}
+h6 {
+	font-weight: 400;
+	font-size: 11pt;
+}
+
+figure figcaption, aside, blockquote cite, .badge {
+	font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+figure figcaption {
+	font-size: 10.5pt;
+}
+
+blockquote cite {
+	font-size: 10pt;
+}
+
+table {
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	font-size: 10.5pt;
+}
+
+thead td, th, tfoot td {
+	font-weight: 700;
+}
+
+.badge {
+	font-weight: 400;
+	font-size: 12pt;
+}
+
+code {
+	font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+	font-size: 10pt;
+}
