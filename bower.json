@@ -1,5 +1,6 @@
 {
   "name": "h5smpl",
+  "version": "0.2.0",
   "description": "An evolving template for a responsive HTML5 page.",
   "authors": [
     "Tobias Kiertscher"
