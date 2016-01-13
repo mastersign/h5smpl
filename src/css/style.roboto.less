@@ -10,9 +10,9 @@
 * Contains a dark theme around the font family "Roboto" from Christian Robertson.
 */
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300,300italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,200);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,300italic,500);
 
 @body-bg: #000;
 @page-bg: #2D2D2D;
@@ -27,7 +27,7 @@ body {
 	line-height: 140%;
 }
 
-h1, h2, h3, h4, h5, h6, figure figcaption, footer, aside, table, blockquote {
+h1, h2, h3, h4, h5, h6, figure figcaption, footer, aside, table, blockquote, .badge {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -41,7 +41,6 @@ h6 {
 }
 
 em {
-	font-weight: 300;
 	font-style: italic;
 }
 
@@ -83,9 +82,8 @@ a {
 @link-fg: #FF50C8;
 
 code {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 0.9em;
-	font-weight: 400;
 }
 @code-fg: #ACF;
 @code-sh-kw: #48F;
