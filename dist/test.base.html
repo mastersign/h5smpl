@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<title>Base-Test</title>
 </head>
@@ -17,6 +16,7 @@
 			<li><a href="test.reset.html">Style Reset</a></li>
 			<li><a href="test.base.html">Base Styles</a></li>
 			<li><a href="test.style.default.html">Theme Default</a></li>
+			<li><a href="test.style.science.html">Theme Science</a></li>
 			<li><a href="test.style.roboto.html">Theme Roboto</a></li>
 		</ul>
 	</nav>
@@ -43,15 +43,36 @@
 	</nav>
 	<div id="page">
 	<h1>Inhalt</h1>
-	<p>Im Folgenden kommen einige Beispiele von verschieden HTML-Elementen.</p>
+	<p>
+		Im Folgenden kommen einige Beispiele mit verschieden HTML-Elementen.
+		Dabei soll ein Gesamteindruck von komplexen Dokumenten in diesem Stil ermöglicht werden.
+		Dabie ist ein wichtiges Element natürlich der Text selbst, der, in Absätze gegliedert,
+		oft die größte Fläche eines Dokumentes einnimmt. Ein Absatz sollte i.d.R. nicht mehr
+		als 6 Zeilen lang sein, damit sich das Auge des Lesers schnell im Text orientieren kann.
+	</p>
+	<p>
+
+	</p>
 	<section>
 		<h1 id="text">Textauszeichnungen</h1>
+		<p>
+			In diesem Abschnitt werden verschiedene Formen der Textauszeichnung demonstriert.
+		</p>
 		<h2 id="text-logic-labeling">Logische Gestaltung</h2>
+		<p>
+			Durch eine logische Gestaltung des Textes, lassen sich die Zusammenhänge
+			der verschiedenen Aussagen im Text schneller erfassen.
+			Auch wird die Stellung eines Wortes oder Absatzes im Kontext des Textes erkennbar,
+			ohne den Text inhaltlich erfassen zu müssen.
+		</p>
 		<h3>Hervorhebung</h3>
 		<p>
 			Ein Fließtext kann mit verschiedenen Mitteln logisch gestaltet werden.
-			So kann man Passagen z.B. <em>hervorheben</em>. Noch kräftiger geht es mit einer
-			<strong>starken Hervorhebung</strong>.
+			So kann man einzelne Worte oder ganze Passagen z.B. <em>hervorheben</em>.
+			Eine einfache Hervorhebung sollte aber den Textfluss <em>nicht</em> unterbrechen
+			und das Auge nicht ablenken.<br/>
+			Noch kräftiger geht es mit einer <strong>starken Hervorhebung</strong>,
+			durch welche ein Wort noch <strong>stärker</strong> aus dem Text hervorsticht.
 		</p>
 		<h3>Zitat</h3>
 		<p>
@@ -142,13 +163,13 @@
 		<p>
 			In einem Fließtext können Elemente <ins>ein- bzw. hinzugefügt</ins>
 			oder auch aus dem Text <del>enfternt</del> bzw. <del>gelöscht</del> werden.
-		</p>
-		<p>
 			Man kann auch <mark>Teile eines Textes</mark> markieren.
 		</p>
 		<h1 id="code">Quelltexte</h1>
-		<p>In einem Text können einzelne <code>Worte</code> als Schlüsselworte ausgezeichnet werden.</p>
-		<p>Mehrere Zeilen Quelltext werden üblicherweise mit einer Nichtproportionalschrift dargestellt:</p>
+		<p>
+			In einem Text können einzelne <code>Worte</code> als Schlüsselworte ausgezeichnet werden.
+			Mehrere Zeilen Quelltext werden üblicherweise mit einer Nichtproportionalschrift dargestellt:
+		</p>
 		<pre><code>public static int Main(string[] args)
 {
     var requestHelp = args.Contains("help");
@@ -207,6 +228,14 @@
 	</section>
 	<section>
 		<h1 id="tables">Tabellen</h1>
+		<p>
+			Tabellen können sehr unterschiedliche Größen annehmen.
+			Und gerade bei großen Tabellen ist die Übersichtlichkeit und Lesbarkeit
+			der Werte in den Zellen von erheblicher Bedeutung.
+			Z.B. sollten Linien, welche die Zellen trennen, ausreichend deutlich sein,
+			dass das Auge in den Zeilen und Spalten gehalten wirde. Sie dürfen aber auch
+			nicht über den Zelleninhalt dominieren.
+		</p>
 		<h2 id="tables-simple">Einfache Tabelle</h2>
 		<p>Hier kurz eine einfache Tabelle mit wenig Inhalt.</p>
 		<table>
@@ -214,9 +243,9 @@
 			<tr><th>X</th><td>00</td><td>01</td></tr>
 			<tr><th>Y</th><td>10</td><td>11</td></tr>
 		</table>
-		<p>Aber Tabellen können noch mehr...</p>
 		<h2 id="tables-header-footer">Kopf- und Fußzeilen</h2>
-		<p>Kopf- und Fußzeilen verleihen einer Tabelle mehr Übersichtlichkeit.</p>
+		<p>Aber Tabellen können noch mehr...<br/>
+		Kopf- und Fußzeilen verleihen einer Tabelle mehr Übersichtlichkeit.</p>
 		<figure>
 			<table>
 				<thead>
@@ -244,18 +273,16 @@
 			<figcaption>Infografik</figcaption>
 		</figure>
 		<h1 id="text-badges">Badges</h2>
+		<div class="badge default">Standard</div>
+		<div class="badge highlight">Hervorgehoben</div>
+		<div class="badge success">Erfolg</div>
+		<div class="badge info">Information</div>
+		<div class="badge warning">Warnung</div>
+		<div class="badge error">Fehler</div>
+		<div class="badge active">Aktiv</div>
+		<div class="badge passive">Passiv</div>
 		<p>
 			Mit einem Badge, kann man den Status eines Abschnitts kennzeichnen.
-		</p>
-		<p>
-			<div class="badge default">Standard</div>
-			<div class="badge highlight">Hervorgehoben</div>
-			<div class="badge success">Erfolg</div>
-			<div class="badge info">Information</div>
-			<div class="badge warning">Warnung</div>
-			<div class="badge error">Fehler</div>
-			<div class="badge active">Aktiv</div>
-			<div class="badge passive">Passiv</div>
 		</p>
 	</section>
 	<section>

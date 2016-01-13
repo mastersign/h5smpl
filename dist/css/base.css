@@ -248,6 +248,14 @@ figure,
 table {
   margin-top: 1.00em;
 }
+em {
+  font-style: italic;
+  font-weight: 400;
+}
+strong {
+  font-style: normal;
+  font-weight: 600;
+}
 a {
   color: #0850ff;
   text-decoration: none;
@@ -302,7 +310,7 @@ mark {
   background-color: #ffffcc;
   border: 1px solid #ffff4d;
   border-radius: 0.25em;
-  padding: 0 0.2em;
+  padding: 0 0.25em;
   color: #000;
   font-style: normal;
   font-weight: normal;
@@ -337,8 +345,11 @@ ol li li {
 ol li li li {
   list-style: lower-roman outside none;
 }
+dl {
+  font-weight: 300;
+}
 dt {
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
 }
 dd {
@@ -421,10 +432,11 @@ pre code {
 /* support for syntax highlighting */
 code span {
   font-family: Consolas, "Courier New", Courier, monospace;
+  font-weight: 400;
   font-size: 1em;
 }
 code span.kw {
-  font-weight: 600;
+  font-weight: 700;
   color: #06D;
 }
 code span.fu {
@@ -443,14 +455,13 @@ code span.fl {
   color: #80A;
 }
 code span.ch {
-  font-weight: 500;
   color: #890;
 }
 code span.st {
   color: #480;
 }
 code span.co {
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
   color: #678;
 }
@@ -459,14 +470,14 @@ code span.ot {
 }
 code span.al {
   color: #D00;
-  font-weight: 600;
+  font-weight: 700;
 }
 code span.er {
   color: #D02;
-  font-weight: 600;
+  font-weight: 700;
 }
 code span.re {
-  color: #A60;
+  color: #024;
 }
 table {
   border-collapse: collapse;
@@ -510,7 +521,7 @@ figure table {
 }
 section {
   border-top: 1px solid #AAA;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 footer {
   margin-top: 2em;

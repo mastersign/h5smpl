@@ -5,6 +5,11 @@
  *
  * modified by Tobias Kiertscher (http://www.mastersign.de/)
  */
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700,700italic);
 html,
 body,
 div,
@@ -190,8 +195,8 @@ body {
   font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
   line-height: 115%;
   margin: 1em 1.5em 2em 1.5em;
-  background-color: #FFF;
-  color: #000;
+  background-color: #f9f8f6;
+  color: #201c13;
 }
 h1,
 h2,
@@ -202,7 +207,7 @@ h6 {
   margin-top: 0.66em;
   margin-bottom: 0.33em;
   line-height: 100%;
-  color: #000;
+  color: #201c13;
 }
 h1,
 h2,
@@ -257,17 +262,17 @@ strong {
   font-weight: 600;
 }
 a {
-  color: #0850ff;
+  color: #06A;
   text-decoration: none;
 }
 a:visited {
-  color: #5285ff;
+  color: #4b92c1;
 }
 a:hover {
-  color: #042880;
+  color: #10415f;
 }
 a:active {
-  color: #ff08a2;
+  color: #aa009f;
 }
 h1 a,
 h1 a:visited,
@@ -289,7 +294,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #042880;
+  color: #10415f;
 }
 h1 a:active,
 h2 a:active,
@@ -297,7 +302,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #ff08a2;
+  color: #aa009f;
 }
 img {
   border: none;
@@ -307,11 +312,11 @@ ins {
   text-decoration: none;
 }
 mark {
-  background-color: #ffffcc;
-  border: 1px solid #ffff4d;
+  background-color: #faf9c5;
+  border: 1px solid #fdfd4a;
   border-radius: 0.25em;
   padding: 0 0.25em;
-  color: #000;
+  color: #201c13;
   font-style: normal;
   font-weight: normal;
 }
@@ -385,11 +390,11 @@ aside,
 pre,
 figure,
 blockquote {
-  background-color: #FFF;
+  background-color: #fff;
 }
 blockquote {
-  border: 1px solid #DDD;
-  border-radius: 0.5em;
+  border: 1px solid #f0eeea;
+  border-radius: 0;
   margin: 1em 10% 1em 10%;
   padding: 0.5em 0.75em;
   font-style: italic;
@@ -408,8 +413,8 @@ blockquote blockquote {
   margin: 1em 0 0.5em 0;
 }
 pre {
-  border: 1px solid #DDD;
-  border-radius: 0.5em;
+  border: 1px solid #f0eeea;
+  border-radius: 0;
   padding: 0.5em 0.75em;
   white-space: pre;
   overflow: auto;
@@ -417,10 +422,10 @@ pre {
 code {
   font-family: Consolas, "Courier New", Courier, monospace;
   font-size: 0.8em;
-  color: #024;
-  background-color: #f2f2f2;
+  color: #444;
+  background-color: #eeedea;
   padding: 0 0.2em;
-  border: 1px solid #ccd3da;
+  border: 1px solid #d5d4d2;
   border-radius: 0.25em;
 }
 pre code {
@@ -437,47 +442,47 @@ code span {
 }
 code span.kw {
   font-weight: 700;
-  color: #06D;
+  color: #007020;
 }
 code span.fu {
-  color: #098;
+  color: #06287E;
 }
 code span.dt {
-  color: #903;
+  color: #902000;
 }
 code span.bn {
-  color: #00E;
+  color: #40A070;
 }
 code span.dv {
-  color: #40B;
+  color: #40A070;
 }
 code span.fl {
-  color: #80A;
+  color: #40A070;
 }
 code span.ch {
-  color: #890;
+  color: #4070A0;
 }
 code span.st {
-  color: #480;
+  color: #4070A0;
 }
 code span.co {
   font-weight: 300;
   font-style: italic;
-  color: #678;
+  color: #60A0B0;
 }
 code span.ot {
-  color: #678;
+  color: #60A0B0;
 }
 code span.al {
-  color: #D00;
+  color: #F00;
   font-weight: 700;
 }
 code span.er {
-  color: #D02;
+  color: #F00;
   font-weight: 700;
 }
 code span.re {
-  color: #024;
+  color: #444;
 }
 table {
   border-collapse: collapse;
@@ -485,7 +490,7 @@ table {
 td,
 th {
   padding: 0.125em 0.5em 0.125em 0.5em;
-  border: 1px solid #DDD;
+  border: 1px solid #f0eeea;
 }
 thead td,
 th,
@@ -493,14 +498,14 @@ tfoot td {
   font-weight: bold;
 }
 thead {
-  background-color: #f2f2f2;
+  background-color: #eeedea;
 }
 tfoot {
-  background-color: #f2f2f2;
+  background-color: #eeedea;
 }
 figure {
-  border: 1px solid #DDD;
-  border-radius: 0.5em;
+  border: 1px solid #f0eeea;
+  border-radius: 0;
   margin-left: 10%;
   margin-right: 10%;
   padding: 0.5em;
@@ -531,8 +536,8 @@ footer {
 aside {
   float: right;
   width: 25%;
-  border: 1px solid #DDD;
-  border-radius: 0.5em;
+  border: 1px solid #f0eeea;
+  border-radius: 0;
   margin-left: 1em;
   padding: 0 0.75em 1em 0.75em;
 }
@@ -564,7 +569,7 @@ aside {
   border-color: #e90c1f;
 }
 .passive {
-  border-color: #d2d2d2;
+  border-color: #cfcfce;
 }
 .active {
   border-color: #0086e6;
@@ -572,67 +577,67 @@ aside {
 /* Colors */
 .default,
 .fg-default {
-  color: #2b2f31;
+  color: #41423e;
 }
 .highlight,
 .fg-highlight {
-  color: #004040;
+  color: #16544e;
 }
 .success,
 .fg-success {
-  color: #0f3d00;
+  color: #26510d;
 }
 .info,
 .fg-info {
-  color: #484200;
+  color: #5e550d;
 }
 .warning,
 .fg-warning {
-  color: #492500;
+  color: #60380d;
 }
 .error,
 .fg-error {
-  color: #460409;
+  color: #5c1717;
 }
 .passive,
 .fg-passive {
-  color: #747474;
+  color: #7e7c7a;
 }
 .active,
 .fg-active {
-  color: #002845;
+  color: #163b52;
 }
 .default,
 .bg-default {
-  background-color: #dde1e3;
+  background-color: #d9dcdd;
 }
 .highlight,
 .bg-highlight {
-  background-color: #b3f3f3;
+  background-color: #aeeeec;
 }
 .success,
 .bg-success {
-  background-color: #c2f0b3;
+  background-color: #beebac;
 }
 .info,
 .bg-info {
-  background-color: #faf4b3;
+  background-color: #f6efac;
 }
 .warning,
 .bg-warning {
-  background-color: #fcd7b3;
+  background-color: #f8d2ac;
 }
 .error,
 .bg-error {
-  background-color: #f8b6bc;
+  background-color: #f4b1b5;
 }
 .passive,
 .bg-passive {
-  background-color: #ededed;
+  background-color: #e8e7e6;
 }
 .active,
 .bg-active {
-  background-color: #b3dbf7;
+  background-color: #aed6f1;
 }
 /**
  * h5smpl - responsive HTML/CSS template
@@ -649,19 +654,19 @@ aside {
 body {
   margin: 0;
   padding: 0;
-  background-color: #F0F0F0;
+  background-color: #dedbd3;
 }
 #frame {
   text-align: left;
   padding: 1em;
-  background-color: #FFF;
+  background-color: #f9f8f6;
   -moz-box-shadow: 0 0 12px #808080;
   -chrome-box-shadow: 0 0 12px #808080;
   box-shadow: 0 0 12px #808080;
 }
 header {
   padding-bottom: 1em;
-  margin-left: 13em;
+  margin-left: 12em;
 }
 figure {
   margin-left: 0;
@@ -684,7 +689,7 @@ nav.horizontal {
   width: auto;
   float: none;
   padding: 0.25em;
-  margin-left: 13em;
+  margin-left: 12em;
   margin-right: 0.5em;
 }
 nav.horizontal .menu-title,
@@ -705,7 +710,7 @@ nav.horizontal li + li {
 }
 nav.horizontal li + li:before {
   content: '\00A0\2022\00A0\00A0';
-  color: #84a8ff;
+  color: #7cafd0;
 }
 /*** NAV VERTICAL ***/
 nav.vertical {
@@ -726,7 +731,7 @@ nav.vertical li {
   padding: 0 0 0.25em 0;
 }
 nav.vertical li li {
-  margin-left: 0.75em;
+  margin-left: 1.25em;
   font-size: small;
   padding: 0;
 }
@@ -746,7 +751,7 @@ nav.fixed > ul {
   margin-bottom: 2em;
 }
 #page {
-  margin: 1em 0.5em 1em 12em;
+  margin: 1em 0.5em 1em 11em;
   padding-left: 1em;
 }
 footer {
@@ -805,7 +810,7 @@ footer {
   }
   nav.vertical > ul ul li + li:before {
     content: '\00A0\2022\00A0\00A0';
-    color: #84a8ff;
+    color: #7cafd0;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
@@ -869,5 +874,100 @@ footer {
 *
 * Tobias Kiertscher (http://www.mastersign.de)
 *
-* STYLE DEFAULT
+* STYLE SERIOUS
 */
+body {
+  font-family: "Crimson Text", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 12.5pt;
+  line-height: 125%;
+}
+p {
+  margin-bottom: 0;
+}
+p + p {
+  margin-top: 0;
+  text-indent: 1.75em;
+}
+p + p.badge {
+  text-indent: 0;
+}
+details {
+  margin-top: 1em;
+}
+strong {
+  font-weight: 600;
+  font-style: normal;
+}
+blockquote,
+aside,
+figure,
+footer,
+nav > ul {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+}
+nav > ul {
+  line-height: 120%;
+}
+pre {
+  line-height: 105%;
+}
+blockquote {
+  font-style: normal;
+  border-left-width: 0.5em;
+}
+header h1 {
+  font-family: "PT Sans Caption", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 1.33em;
+}
+h1 {
+  font-size: 2.0em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h6 {
+  font-weight: 400;
+  font-size: 11pt;
+}
+figure figcaption,
+aside,
+blockquote cite,
+.badge {
+  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+figure figcaption {
+  font-size: 10.5pt;
+}
+blockquote cite {
+  font-size: 10pt;
+}
+table {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 10.5pt;
+}
+thead td,
+th,
+tfoot td {
+  font-weight: 700;
+}
+.badge {
+  font-weight: 400;
+  font-size: 12pt;
+}
+code {
+  font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+  font-size: 10pt;
+}

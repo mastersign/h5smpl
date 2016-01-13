@@ -5,9 +5,9 @@
  *
  * modified by Tobias Kiertscher (http://www.mastersign.de/)
  */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300,300italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,200);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,300italic,500);
 html,
 body,
 div,
@@ -251,6 +251,14 @@ figure,
 table {
   margin-top: 1.00em;
 }
+em {
+  font-style: italic;
+  font-weight: 400;
+}
+strong {
+  font-style: normal;
+  font-weight: 600;
+}
 a {
   color: #FF50C8;
   text-decoration: none;
@@ -305,7 +313,7 @@ mark {
   background-color: #575724;
   border: 1px solid #81811b;
   border-radius: 0.25em;
-  padding: 0 0.2em;
+  padding: 0 0.25em;
   color: #D0D8E0;
   font-style: normal;
   font-weight: normal;
@@ -340,8 +348,11 @@ ol li li {
 ol li li li {
   list-style: lower-roman outside none;
 }
+dl {
+  font-weight: 300;
+}
 dt {
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
 }
 dd {
@@ -424,10 +435,11 @@ pre code {
 /* support for syntax highlighting */
 code span {
   font-family: Consolas, "Courier New", Courier, monospace;
+  font-weight: 400;
   font-size: 1em;
 }
 code span.kw {
-  font-weight: 600;
+  font-weight: 700;
   color: #48F;
 }
 code span.fu {
@@ -446,14 +458,13 @@ code span.fl {
   color: #B6F;
 }
 code span.ch {
-  font-weight: 500;
   color: #AC0;
 }
 code span.st {
   color: #4B0;
 }
 code span.co {
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
   color: #89B;
 }
@@ -462,11 +473,11 @@ code span.ot {
 }
 code span.al {
   color: #D00;
-  font-weight: 600;
+  font-weight: 700;
 }
 code span.er {
   color: #D02;
-  font-weight: 600;
+  font-weight: 700;
 }
 code span.re {
   color: #A60;
@@ -513,7 +524,7 @@ figure table {
 }
 section {
   border-top: 1px solid #3F486F;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 footer {
   margin-top: 2em;
@@ -677,6 +688,7 @@ nav.horizontal {
   float: none;
   padding: 0.25em;
   margin-left: 13em;
+  margin-right: 0.5em;
 }
 nav.horizontal .menu-title,
 nav.horizontal ul {
@@ -687,7 +699,16 @@ nav.horizontal .menu-title {
 }
 nav.horizontal li {
   display: inline-block;
-  padding: 0 0.5em 0 0.5em;
+}
+nav.horizontal li:first-of-type {
+  padding-left: 0.5em;
+}
+nav.horizontal li + li {
+  margin-left: 0;
+}
+nav.horizontal li + li:before {
+  content: '\00A0\2022\00A0\00A0';
+  color: #963f7b;
 }
 /*** NAV VERTICAL ***/
 nav.vertical {
@@ -695,20 +716,6 @@ nav.vertical {
   width: 10em;
   float: left;
   padding: 1em 1em 1em 0.5em;
-}
-nav.fixed {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  overflow-y: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-nav.fixed > ul {
-  margin-top: 3em;
-  margin-bottom: 2em;
 }
 nav.vertical .menu-title,
 nav.vertical ul {
@@ -725,6 +732,21 @@ nav.vertical li li {
   margin-left: 0.75em;
   font-size: small;
   padding: 0;
+}
+/*** NAV FIXED ***/
+nav.fixed {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+nav.fixed > ul {
+  margin-top: 3em;
+  margin-bottom: 2em;
 }
 #page {
   margin: 1em 0.5em 1em 12em;
@@ -752,23 +774,24 @@ footer {
     margin: 0;
   }
   nav.vertical {
-    width: auto;
-    float: none;
-    margin: 0;
-    padding: 0.25em;
-  }
-  nav.fixed {
-    position: relative;
-  }
-  nav.vertical {
     border-bottom: 1px solid #3F486F;
     width: auto;
     float: none;
     padding: 0.25em;
+    margin: 0;
   }
   nav.vertical > .menu-title {
     padding: 0 0.5em 0 0.25em;
   }
+  nav.fixed {
+    position: relative;
+  }
+  #page {
+    margin: 1em 0.5em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px), screen and (max-device-height: 720px) and (orientation: landscape) and (min-width: 480px), screen and (max-width: 720px) and (orientation: landscape), screen and (max-device-height: 720px) and (orientation: landscape) and (orientation: landscape) {
   nav.vertical > ul {
     margin: 0.5em;
   }
@@ -777,10 +800,15 @@ footer {
   }
   nav.vertical > ul ul li {
     display: inline;
-  }
-  #page {
-    margin: 1em 0.5em;
+    margin-right: 0;
     padding: 0;
+  }
+  nav.vertical > ul ul li + li {
+    margin-left: 0;
+  }
+  nav.vertical > ul ul li + li:before {
+    content: '\00A0\2022\00A0\00A0';
+    color: #963f7b;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
@@ -802,6 +830,18 @@ footer {
   }
   nav.horizontal {
     margin: 0;
+    text-align: center;
+  }
+  nav.horizontal li,
+  nav.horizontal li:first-of-type {
+    display: block;
+    padding: 0 0 0.15em 0;
+  }
+  nav.horizontal li + li {
+    margin-left: 0;
+  }
+  nav.horizontal li + li:before {
+    content: none;
   }
   nav.vertical,
   nav.horizontal {
@@ -811,23 +851,16 @@ footer {
     float: none;
     padding: 0.5em 0em;
   }
-  nav.horizontal {
-    text-align: center;
-  }
-  nav.vertical .menu-title,
-  nav.vertical ul,
-  nav.horizontal .menu-title {
+  nav.vertical ul {
     display: block;
   }
+  nav.vertical > ul {
+    margin: 0.5em;
+  }
   nav.vertical .menu-title,
   nav.horizontal .menu-title {
+    display: block;
     padding: 0 0 0.5em 0;
-  }
-  nav.vertical li,
-  nav.vertical > ul ul li,
-  nav.horizontal li {
-    display: block;
-    padding: 0 0 0.15em 0;
   }
   aside {
     width: 50%;
@@ -858,7 +891,8 @@ figure figcaption,
 footer,
 aside,
 table,
-blockquote {
+blockquote,
+.badge {
   font-family: 'Roboto Condensed', sans-serif;
 }
 h1,
@@ -874,7 +908,6 @@ h6 {
   font-weight: 300;
 }
 em {
-  font-weight: 300;
   font-style: italic;
 }
 strong {
@@ -905,9 +938,8 @@ a {
   font-weight: 400;
 }
 code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.9em;
-  font-weight: 400;
 }
 figure figcaption {
   font-weight: 400;
