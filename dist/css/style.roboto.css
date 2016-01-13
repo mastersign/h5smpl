@@ -248,7 +248,8 @@ ol,
 dl,
 pre,
 figure,
-table {
+table,
+summary {
   margin-top: 1.00em;
 }
 em {
@@ -413,7 +414,7 @@ blockquote blockquote {
 pre {
   border: 1px solid #3F486F;
   border-radius: 0.5em;
-  padding: 0.5em 0.75em;
+  padding: 0.25em 0.75em 0.55em 0.75em;
   white-space: pre;
   overflow: auto;
 }
@@ -538,6 +539,20 @@ aside {
   border-radius: 0.5em;
   margin-left: 1em;
   padding: 0 0.75em 1em 0.75em;
+}
+details {
+  color: #9aa0a5;
+  padding-left: 1em;
+  border-left: 1px solid #3F486F;
+}
+details p {
+  margin-top: 0.5em;
+}
+details summary {
+  display: block;
+  font-weight: 500;
+  color: #D0D8E0;
+  padding-bottom: 0.5em;
 }
 /* Badge */
 .badge {

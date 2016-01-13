@@ -250,7 +250,8 @@ ol,
 dl,
 pre,
 figure,
-table {
+table,
+summary {
   margin-top: 1.00em;
 }
 em {
@@ -415,7 +416,7 @@ blockquote blockquote {
 pre {
   border: 1px solid #f0eeea;
   border-radius: 0;
-  padding: 0.5em 0.75em;
+  padding: 0.25em 0.75em 0.55em 0.75em;
   white-space: pre;
   overflow: auto;
 }
@@ -540,6 +541,20 @@ aside {
   border-radius: 0;
   margin-left: 1em;
   padding: 0 0.75em 1em 0.75em;
+}
+details {
+  color: #67645e;
+  padding-left: 1em;
+  border-left: 1px solid #AAA;
+}
+details p {
+  margin-top: 0.5em;
+}
+details summary {
+  display: block;
+  font-weight: 500;
+  color: #201c13;
+  padding-bottom: 0.5em;
 }
 /* Badge */
 .badge {
@@ -954,9 +969,14 @@ figure figcaption {
 blockquote cite {
   font-size: 10pt;
 }
+details {
+  border-left: 1px solid #f0eeea;
+  border-left-width: 0.5em;
+}
 table {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 10.5pt;
+  background-color: #fff;
 }
 thead td,
 th,
@@ -966,6 +986,7 @@ tfoot td {
 .badge {
   font-weight: 400;
   font-size: 12pt;
+  border-radius: 0;
 }
 code {
   font-family: "Anonymous Pro", "Courier New", Courier, monospace;
