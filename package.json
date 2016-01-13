@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/mastersign/h5smpl#readme",
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.1.0",
     "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
     "gulp-text-simple": "^0.4.0"
   }
 }
