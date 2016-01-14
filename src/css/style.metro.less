@@ -9,12 +9,40 @@
 * STYLE METRO
 */
 
-@body-bg: #AAA;
-@page-shaddow: #AAA;
+@body-bg: #696969;
+@page-shaddow: @body-bg;
+@headline-fg: #252525;
+
+@link-fg: #1B58B8;
+@link-active: #1FAEFF;
 
 @block-border-radius: 0;
+@block-border: none;
+@block-bg: #F8F8F8;
 @span-border-radius: 0;
 @badge-border-radius: 0;
+
+@color-default: #696969;
+@color-highlight: #00A4A4;
+@color-success: #78BA00;
+@color-info: #F4B300;
+@color-warning: #E46A19;
+@color-error: #AE113D;
+@color-active: #2673EC;
+@color-passive: #AAA;
+
+@code-sh-kw: #2673EC;
+@code-sh-fu: #004D60;
+@code-sh-dt: #B01E00;
+@code-sh-bn: #006AC1;
+@code-sh-dv: #4617B4;
+@code-sh-fl: #7200AC;
+@code-sh-ch: #199900;
+@code-sh-st: #004A00;
+@code-sh-co: #6F6666;
+@code-sh-ot: #6F6666;
+@code-sh-al: #AE113D;
+@code-sh-er: #AE113D;
 
 body {
 	font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif;
@@ -34,6 +62,18 @@ h5 {
 }
 h6 {
 	text-decoration: none;
+}
+
+ins { color: #199900; }
+del { color: #B81B1B; }
+mark {
+	background-color: #FFFFAA;
+	border: none;
+}
+
+aside {
+	font-weight: 400;
+	font-size: 9.5pt;
 }
 
 figure figcaption {
