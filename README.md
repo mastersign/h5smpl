@@ -1,4 +1,4 @@
-h5smpl
+H5smpl
 ======
 
 pronounced _"hive sample"_ IPA: **haɪvˈsæm.pəl**
@@ -13,13 +13,31 @@ over building a CMS template, to using it in documentation tools like
 Structure
 ---------
 
-* **css** _Folder with all CSS files for the template_
-    + `reset.css` _Reset stylesheet, for creating a identical starting point in all browsers_
-    + `base.css` _Layout-independent styles for the HTML elements_
-    + `layout.css` _Styles for the responsible layout_
-* **img** _Folder with image resources for the example HTML files_
-* `template.html` _Empty HTML skeleton referencing the CSS files_
-* `test.reset.html` _Example page, only referencing the reset stylesheet_
-* `test.base.html` _Example page, referencing the reset and base stylesheet_
-* `test.layout.html` _Example page, referencing all stylesheets_
-* `test.mini.html` _Minimal example page, referencing all stylesheets_
+* **dist** _Folder with files for distribution of the template_
+    + `template.html` _HTML template file without content, linked to the default style_
+    + `test.*.html` _HTML file for demonstration of the template_
+    + **css** _Folder with CSS files of the template_
+        - `reset.css`, `base.css` _For demonstration purpose only_
+        - `style.*.css` _A specific style of the templates CSS_
+        - `style.*.mini.css` _Minified version of a specific style of the templates CSS &ndash;_
+          _The main result of this project_
+* **src** _Folder with source files for the template_
+    + **css** _Folder with LESS code files for CSS generation_
+    + **html** _Folder with HTML content for template demonstration and usage_
+    + **img** _Folder with demo images_
+* `bower.json` _Bower component description file_
+* `gulpfile.js` _Build automation with Gulp_
+* `package.json` _Project description and NPM dependencies for the build process_
+
+Styles
+------
+
+* **Default**
+* **Metro**
+* **Science**
+* **Roboto**
+
+License
+-------
+
+MIT
