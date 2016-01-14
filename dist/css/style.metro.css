@@ -202,7 +202,7 @@ h6 {
   margin-top: 0.66em;
   margin-bottom: 0.33em;
   line-height: 100%;
-  color: #000;
+  color: #252525;
 }
 h1,
 h2,
@@ -258,17 +258,17 @@ strong {
   font-weight: 600;
 }
 a {
-  color: #0850ff;
+  color: #1B58B8;
   text-decoration: none;
 }
 a:visited {
-  color: #5285ff;
+  color: #5f8acd;
 }
 a:hover {
-  color: #042880;
+  color: #00296a;
 }
 a:active {
-  color: #ff08a2;
+  color: #1FAEFF;
 }
 h1 a,
 h1 a:visited,
@@ -290,7 +290,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #042880;
+  color: #00296a;
 }
 h1 a:active,
 h2 a:active,
@@ -298,7 +298,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: #ff08a2;
+  color: #1FAEFF;
 }
 img {
   border: none;
@@ -386,10 +386,10 @@ aside,
 pre,
 figure,
 blockquote {
-  background-color: #FFF;
+  background-color: #F8F8F8;
 }
 blockquote {
-  border: 1px solid #DDD;
+  border: none;
   border-radius: 0;
   margin: 1em 10% 1em 10%;
   padding: 0.5em 0.75em;
@@ -409,7 +409,7 @@ blockquote blockquote {
   margin: 1em 0 0.5em 0;
 }
 pre {
-  border: 1px solid #DDD;
+  border: none;
   border-radius: 0;
   padding: 0.25em 0.75em 0.55em 0.75em;
   white-space: pre;
@@ -438,43 +438,43 @@ code span {
 }
 code span.kw {
   font-weight: 700;
-  color: #06D;
+  color: #2673EC;
 }
 code span.fu {
-  color: #098;
+  color: #004D60;
 }
 code span.dt {
-  color: #903;
+  color: #B01E00;
 }
 code span.bn {
-  color: #00E;
+  color: #006AC1;
 }
 code span.dv {
-  color: #40B;
+  color: #4617B4;
 }
 code span.fl {
-  color: #80A;
+  color: #7200AC;
 }
 code span.ch {
-  color: #890;
+  color: #199900;
 }
 code span.st {
-  color: #480;
+  color: #004A00;
 }
 code span.co {
   font-weight: 300;
   font-style: italic;
-  color: #678;
+  color: #6F6666;
 }
 code span.ot {
-  color: #678;
+  color: #6F6666;
 }
 code span.al {
-  color: #D00;
+  color: #AE113D;
   font-weight: 700;
 }
 code span.er {
-  color: #D02;
+  color: #AE113D;
   font-weight: 700;
 }
 code span.re {
@@ -486,7 +486,7 @@ table {
 td,
 th {
   padding: 0.125em 0.5em 0.125em 0.5em;
-  border: 1px solid #DDD;
+  border: none;
 }
 thead td,
 th,
@@ -500,7 +500,7 @@ tfoot {
   background-color: #f2f2f2;
 }
 figure {
-  border: 1px solid #DDD;
+  border: none;
   border-radius: 0;
   margin-left: 10%;
   margin-right: 10%;
@@ -532,7 +532,7 @@ footer {
 aside {
   float: right;
   width: 25%;
-  border: 1px solid #DDD;
+  border: none;
   border-radius: 0;
   margin-left: 1em;
   padding: 0 0.75em 1em 0.75em;
@@ -557,97 +557,97 @@ details summary {
   font-weight: bold;
   font-size: 0.9em;
   padding: 0.1em 0.75em 0.2em 0.75em;
-  border: 1px solid #8f9ca3;
+  border: 1px solid #696969;
   border-radius: 0;
 }
 .default {
-  border-color: #8f9ca3;
+  border-color: #696969;
 }
 .highlight {
-  border-color: #00d6d6;
+  border-color: #00A4A4;
 }
 .success {
-  border-color: #33cc00;
+  border-color: #78BA00;
 }
 .info {
-  border-color: #f0dc00;
+  border-color: #F4B300;
 }
 .warning {
-  border-color: #f57a00;
+  border-color: #E46A19;
 }
 .error {
-  border-color: #e90c1f;
+  border-color: #AE113D;
 }
 .passive {
-  border-color: #d2d2d2;
+  border-color: #d5d5d5;
 }
 .active {
-  border-color: #0086e6;
+  border-color: #2673EC;
 }
 /* Colors */
 .default,
 .fg-default {
-  color: #2b2f31;
+  color: #202020;
 }
 .highlight,
 .fg-highlight {
-  color: #004040;
+  color: #003131;
 }
 .success,
 .fg-success {
-  color: #0f3d00;
+  color: #243800;
 }
 .info,
 .fg-info {
-  color: #484200;
+  color: #493600;
 }
 .warning,
 .fg-warning {
-  color: #492500;
+  color: #442008;
 }
 .error,
 .fg-error {
-  color: #460409;
+  color: #340512;
 }
 .passive,
 .fg-passive {
-  color: #747474;
+  color: #777777;
 }
 .active,
 .fg-active {
-  color: #002845;
+  color: #0b2347;
 }
 .default,
 .bg-default {
-  background-color: #dde1e3;
+  background-color: #d2d2d2;
 }
 .highlight,
 .bg-highlight {
-  background-color: #b3f3f3;
+  background-color: #b3e4e4;
 }
 .success,
 .bg-success {
-  background-color: #c2f0b3;
+  background-color: #d7eab3;
 }
 .info,
 .bg-info {
-  background-color: #faf4b3;
+  background-color: #fce8b3;
 }
 .warning,
 .bg-warning {
-  background-color: #fcd7b3;
+  background-color: #f7d2ba;
 }
 .error,
 .bg-error {
-  background-color: #f8b6bc;
+  background-color: #e7b8c5;
 }
 .passive,
 .bg-passive {
-  background-color: #ededed;
+  background-color: #eeeeee;
 }
 .active,
 .bg-active {
-  background-color: #b3dbf7;
+  background-color: #bed5f9;
 }
 /**
  * h5smpl - responsive HTML/CSS template
@@ -664,15 +664,15 @@ details summary {
 body {
   margin: 0;
   padding: 0;
-  background-color: #AAA;
+  background-color: #696969;
 }
 #frame {
   text-align: left;
   padding: 1em;
   background-color: #FFF;
-  -moz-box-shadow: 0 0 12px #AAA;
-  -chrome-box-shadow: 0 0 12px #AAA;
-  box-shadow: 0 0 12px #AAA;
+  -moz-box-shadow: 0 0 12px #696969;
+  -chrome-box-shadow: 0 0 12px #696969;
+  box-shadow: 0 0 12px #696969;
 }
 header {
   padding-bottom: 1em;
@@ -720,7 +720,7 @@ nav.horizontal li + li {
 }
 nav.horizontal li + li:before {
   content: '\00A0\2022\00A0\00A0';
-  color: #84a8ff;
+  color: #8dacdc;
 }
 /*** NAV VERTICAL ***/
 nav.vertical {
@@ -820,7 +820,7 @@ footer {
   }
   nav.vertical > ul ul li + li:before {
     content: '\00A0\2022\00A0\00A0';
-    color: #84a8ff;
+    color: #8dacdc;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
@@ -910,6 +910,20 @@ h5 {
 h6 {
   text-decoration: none;
 }
+ins {
+  color: #199900;
+}
+del {
+  color: #B81B1B;
+}
+mark {
+  background-color: #FFFFAA;
+  border: none;
+}
+aside {
+  font-weight: 400;
+  font-size: 9.5pt;
+}
 figure figcaption {
   font-weight: 400;
   font-size: 10.5pt;
@@ -935,26 +949,26 @@ code {
   color: #FFF;
 }
 .default {
-  background-color: #8f9ca3;
+  background-color: #696969;
 }
 .highlight {
-  background-color: #00d6d6;
+  background-color: #00A4A4;
 }
 .success {
-  background-color: #33cc00;
+  background-color: #78BA00;
 }
 .info {
-  background-color: #f0dc00;
+  background-color: #F4B300;
 }
 .warning {
-  background-color: #f57a00;
+  background-color: #E46A19;
 }
 .error {
-  background-color: #e90c1f;
+  background-color: #AE113D;
 }
 .active {
-  background-color: #0086e6;
+  background-color: #2673EC;
 }
 .passive {
-  background-color: #a6a6a6;
+  background-color: #AAA;
 }
