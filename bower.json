@@ -1,6 +1,5 @@
 {
   "name": "h5smpl",
-  "version": "0.2.0",
   "description": "An evolving template for a responsive HTML5 page.",
   "authors": [
     "Tobias Kiertscher"
@@ -8,10 +7,17 @@
   "license": "MIT",
   "keywords": [
     "HTML5",
-    "Template",
+    "template",
     "responsive"
   ],
   "homepage": "https://github.com/mastersign/h5smpl",
+  "main": [
+    "src/html/template.html",
+    "src/css/style.default.less",
+    "src/css/style.metro.less",
+    "src/css/style.roboto.less",
+    "src/css/style.science.less"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
