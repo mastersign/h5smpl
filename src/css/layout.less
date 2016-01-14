@@ -101,6 +101,9 @@ nav.vertical {
 	li {
 		display: block;
 		padding: 0 0 0.25em 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 		li {
 			margin-left: @nested-menu-ident;
 			font-size: small;
@@ -174,8 +177,12 @@ footer {
 	}
 
 	@media (min-width: 480px), (orientation: landscape) {
-		nav.vertical > ul {
+		nav.vertical li {
 			margin: 0.5em;
+			overflow: auto;
+		}
+		nav.vertical > ul {
+			white-space: normal;
 			ul {
 				display: block;
 				li {
