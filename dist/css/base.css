@@ -328,6 +328,9 @@ li ol {
   margin-top: 0.33em;
   margin-bottom: 0.33em;
 }
+li p:first-of-type {
+  margin-top: 0;
+}
 ul li {
   list-style: disc outside none;
 }

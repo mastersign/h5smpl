@@ -333,6 +333,9 @@ li ol {
   margin-top: 0.33em;
   margin-bottom: 0.33em;
 }
+li p:first-of-type {
+  margin-top: 0;
+}
 ul li {
   list-style: disc outside none;
 }
@@ -744,6 +747,9 @@ nav.vertical .menu-title {
 nav.vertical li {
   display: block;
   padding: 0 0 0.25em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 nav.vertical li li {
   margin-left: 1.25em;
@@ -809,8 +815,12 @@ footer {
   }
 }
 @media screen and (max-width: 720px) and (min-width: 480px), screen and (max-device-height: 720px) and (orientation: landscape) and (min-width: 480px), screen and (max-width: 720px) and (orientation: landscape), screen and (max-device-height: 720px) and (orientation: landscape) and (orientation: landscape) {
-  nav.vertical > ul {
+  nav.vertical li {
     margin: 0.5em;
+    overflow: auto;
+  }
+  nav.vertical > ul {
+    white-space: normal;
   }
   nav.vertical > ul ul {
     display: block;
