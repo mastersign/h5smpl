@@ -76,6 +76,10 @@ aside {
 	font-size: 9.5pt;
 }
 
+blockquote {
+	border-left: 0.5em solid #E0E0E0;
+}
+
 figure figcaption {
 	font-weight: 400;
 	font-size: 10.5pt;
@@ -84,6 +88,16 @@ figure figcaption {
 code {
 	font-family: Consolas, "Courier New", Courier, monospace;
 	line-height: 110%;
+}
+
+table {
+	background-color: @page-bg;
+}
+thead td, tfoot td {
+	background-color: @block-bg;
+}
+td, th, thead td, tfoot td {
+	border: 1px solid #CCC;
 }
 
 .badge {
