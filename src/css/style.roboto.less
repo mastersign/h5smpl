@@ -121,3 +121,36 @@ table, td, th {
 thead td, tfoot td, th {
 	font-weight: 700;
 }
+
+@color-default: hsl(200, 10%, 60%);
+@color-fg-default: mix(@page-bg, @color-default, 90%);
+@color-bd-default: @color-default;
+@color-bg-default: @color-default;
+@color-highlight: hsl(0, 100%, 100%);
+@color-fg-highlight: mix(@page-bg, @color-highlight, 90%);
+@color-bd-highlight: @color-highlight;
+@color-bg-highlight: @color-highlight;
+@color-success: hsl(150, 100%, 40%);
+@color-fg-success: mix(@page-bg, @color-success, 90%);
+@color-bd-success: @color-success;
+@color-bg-success: @color-success;
+@color-info: hsl(55, 80%, 70%);
+@color-fg-info: mix(@page-bg, @color-info, 90%);
+@color-bd-info: @color-info;
+@color-bg-info: @color-info;
+@color-warning: hsl(320, 100%, 80%);
+@color-fg-warning: mix(@page-bg, @color-warning, 90%);
+@color-bd-warning: @color-warning;
+@color-bg-warning: @color-warning;
+@color-error: hsl(335, 100%, 50%);
+@color-fg-error: mix(@page-bg, @color-error, 90%);
+@color-bd-error: @color-error;
+@color-bg-error: @color-error;
+@color-passive: hsl(0, 0%, 65%);
+@color-fg-passive: mix(@page-bg, @color-passive, 90%);
+@color-bd-passive: mix(@page-bg, @color-passive, 50%);
+@color-bg-passive: mix(@page-bg, @color-passive, 50%);
+@color-active: hsl(205, 100%, 50%);
+@color-fg-active: mix(@page-bg, @color-active, 90%);
+@color-bd-active: @color-active;
+@color-bg-active: @color-active;
