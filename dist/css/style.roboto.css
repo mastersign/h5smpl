@@ -562,98 +562,104 @@ details summary {
   display: inline-block;
   font-weight: bold;
   font-size: 0.9em;
+  margin: 1em 0.5em 0 0;
   padding: 0.1em 0.75em 0.2em 0.75em;
   border: 1px solid #8f9ca3;
   border-radius: 0.33em;
+}
+span.badge {
+  display: inline;
+  padding: 0em 0.5em 0.05em 0.5em;
+  margin: 0;
 }
 .default {
   border-color: #8f9ca3;
 }
 .highlight {
-  border-color: #00d6d6;
+  border-color: #ffffff;
 }
 .success {
-  border-color: #33cc00;
+  border-color: #00cc66;
 }
 .info {
-  border-color: #f0dc00;
+  border-color: #f0e675;
 }
 .warning {
-  border-color: #f57a00;
+  border-color: #ff99dd;
 }
 .error {
-  border-color: #e90c1f;
+  border-color: #ff006a;
 }
 .passive {
   border-color: #696969;
 }
 .active {
-  border-color: #0086e6;
+  border-color: #0095ff;
 }
 /* Colors */
 .default,
 .fg-default {
-  color: #bcc6ce;
+  color: #373839;
 }
 .highlight,
 .fg-highlight {
-  color: #92d7dd;
+  color: #424242;
 }
 .success,
 .fg-success {
-  color: #a1d49d;
+  color: #293d33;
 }
 .info,
 .fg-info {
-  color: #dad99d;
+  color: #403f34;
 }
 .warning,
 .fg-warning {
-  color: #dbbc9d;
+  color: #42383f;
 }
 .error,
 .fg-error {
-  color: #d79ba6;
+  color: #422933;
 }
 .passive,
 .fg-passive {
-  color: #b2b5b7;
+  color: #393939;
 }
 .active,
 .fg-active {
-  color: #92bfe2;
+  color: #293742;
 }
 .default,
 .bg-default {
-  background-color: #4a4e50;
+  background-color: #8f9ca3;
 }
 .highlight,
 .bg-highlight {
-  background-color: #1f6060;
+  background-color: #ffffff;
 }
 .success,
 .bg-success {
-  background-color: #2f5d1f;
+  background-color: #00cc66;
 }
 .info,
 .bg-info {
-  background-color: #67611f;
+  background-color: #f0e675;
 }
 .warning,
 .bg-warning {
-  background-color: #69441f;
+  background-color: #ff99dd;
 }
 .error,
 .bg-error {
-  background-color: #652329;
+  background-color: #ff006a;
 }
 .passive,
 .bg-passive {
-  background-color: #454545;
+  background-color: #696969;
 }
 .active,
 .bg-active {
-  background-color: #1f4864;
+  background-color: #0095ff;
 }
 /**
  * h5smpl - responsive HTML/CSS template
