@@ -1,0 +1,995 @@
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ *
+ * modified by Tobias Kiertscher (http://www.mastersign.de/)
+ */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300,300italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,300italic,500);
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+body {
+  line-height: 100%;
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+code {
+  font-family: monospace;
+}
+ins {
+  text-decoration: underline;
+}
+mark {
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #888;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ *
+ * Tobias Kiertscher (http://www.mastersign.de)
+ * 
+ * VARS
+ * Contains variables which are used in BASE and LAYOUT.
+ * They can be overriden by styles.
+ */
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ *
+ * Tobias Kiertscher (http://www.mastersign.de)
+ * 
+ * BASE
+ * Contains layout independent styling for HTML elements.
+ */
+body {
+  font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+  line-height: 115%;
+  margin: 1em 1.5em 2em 1.5em;
+  background-color: #2D2D2D;
+  color: #D0D8E0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.66em;
+  margin-bottom: 0.33em;
+  line-height: 100%;
+  color: #D0D8E0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Cambria, Times, "Times New Roman", serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5,
+h6 {
+  font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+h6 {
+  font-size: 1em;
+  text-decoration: underline;
+  font-weight: normal;
+}
+hr {
+  clear: both;
+}
+p,
+ul,
+ol,
+dl,
+pre,
+figure,
+table,
+summary {
+  margin-top: 1.00em;
+}
+em {
+  font-style: italic;
+  font-weight: 400;
+}
+strong {
+  font-style: normal;
+  font-weight: 600;
+}
+a {
+  color: #FF50C8;
+  text-decoration: none;
+}
+a:visited {
+  color: #c0469a;
+}
+a:hover {
+  color: #e894d4;
+}
+a:active {
+  color: #fffc50;
+}
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited,
+h5 a,
+h5 a:visited,
+h6 a,
+h6 a:visited {
+  color: inherit;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #e894d4;
+}
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #fffc50;
+}
+img {
+  border: none;
+}
+ins {
+  color: #90FFCF;
+  text-decoration: none;
+}
+mark {
+  background-color: #575724;
+  border: 1px solid #81811b;
+  border-radius: 0.25em;
+  padding: 0 0.25em;
+  color: #D0D8E0;
+  font-style: normal;
+  font-weight: normal;
+}
+del {
+  color: #E080C0;
+  text-decoration: line-through;
+}
+li {
+  margin-left: 2em;
+}
+li ul,
+li ol {
+  margin-top: 0.33em;
+  margin-bottom: 0.33em;
+}
+li p:first-of-type {
+  margin-top: 0;
+}
+ul li {
+  list-style: disc outside none;
+}
+ul li li {
+  list-style: circle outside none;
+}
+ul li li li {
+  list-style: square outside none;
+}
+ol li {
+  list-style: decimal outside none;
+}
+ol li li {
+  list-style: lower-latin outside none;
+}
+ol li li li {
+  list-style: lower-roman outside none;
+}
+dl {
+  font-weight: 300;
+}
+dt {
+  font-weight: 600;
+  font-style: italic;
+}
+dd {
+  margin-left: 2em;
+  padding-bottom: 0.5em;
+}
+nav li,
+nav ul li,
+nav ul li li,
+nav ul li li li {
+  list-style: none outside none;
+  margin-left: 0;
+}
+nav li ul,
+nav li ol {
+  margin: 0;
+}
+nav li ul li:first-child,
+nav li ol li:first-child {
+  margin-top: 0.2em;
+}
+q {
+  quotes: "\201E" "\201C";
+  font-style: italic;
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+aside,
+pre,
+figure,
+blockquote {
+  background-color: #222;
+}
+blockquote {
+  border: 1px solid #3F486F;
+  border-radius: 0.5em;
+  margin: 1em 10% 1em 10%;
+  padding: 0.5em 0.75em;
+  font-style: italic;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+  margin-top: 0.5em;
+  font-style: normal;
+  font-size: 0.8em;
+}
+blockquote > p:first-child {
+  margin-top: 0;
+}
+blockquote blockquote {
+  margin: 1em 0 0.5em 0;
+}
+pre {
+  border: 1px solid #3F486F;
+  border-radius: 0.5em;
+  padding: 0.25em 0.75em 0.55em 0.75em;
+  white-space: pre;
+  overflow: auto;
+}
+code {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: 0.8em;
+  color: #ACF;
+  background-color: #353636;
+  padding: 0 0.2em;
+  border: 1px solid #464d57;
+  border-radius: 0.25em;
+}
+pre code {
+  background-color: inherit;
+  border: none;
+  border-radius: none;
+  padding: 0;
+}
+/* support for syntax highlighting */
+code span {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 1em;
+}
+code span.kw {
+  font-weight: 700;
+  color: #48F;
+}
+code span.fu {
+  color: #2A9;
+}
+code span.dt {
+  color: #D6A;
+}
+code span.bn {
+  color: #56F;
+}
+code span.dv {
+  color: #86F;
+}
+code span.fl {
+  color: #B6F;
+}
+code span.ch {
+  color: #AC0;
+}
+code span.st {
+  color: #4B0;
+}
+code span.co {
+  font-weight: 300;
+  font-style: italic;
+  color: #89B;
+}
+code span.ot {
+  color: #89B;
+}
+code span.al {
+  color: #D00;
+  font-weight: 700;
+}
+code span.er {
+  color: #D02;
+  font-weight: 700;
+}
+code span.re {
+  color: #A60;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0.125em 0.5em 0.125em 0.5em;
+  border: 1px solid #3F486F;
+}
+thead td,
+th,
+tfoot td {
+  font-weight: bold;
+}
+thead {
+  background-color: #353636;
+}
+tfoot {
+  background-color: #353636;
+}
+figure {
+  border: 1px solid #3F486F;
+  border-radius: 0.5em;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0.5em;
+  text-align: center;
+  overflow: auto;
+}
+figure figcaption {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+figure table {
+  width: 100%;
+  margin-top: 0;
+}
+section {
+  border-top: 1px solid #3F486F;
+  margin-top: 1.5em;
+}
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #888;
+}
+aside {
+  float: right;
+  width: 25%;
+  border: 1px solid #3F486F;
+  border-radius: 0.5em;
+  margin-left: 1em;
+  padding: 0 0.75em 1em 0.75em;
+}
+details {
+  color: #9aa0a5;
+  padding-left: 1em;
+  border-left: 1px solid #3F486F;
+}
+details p {
+  margin-top: 0.5em;
+}
+details summary {
+  display: block;
+  font-weight: 500;
+  color: #D0D8E0;
+  padding-bottom: 0.5em;
+}
+/* Badge */
+.badge {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 1em 0.5em 0 0;
+  padding: 0.1em 0.75em 0.2em 0.75em;
+  border: 1px solid #8f9ca3;
+  border-radius: 0.33em;
+}
+span.badge {
+  display: inline;
+  padding: 0em 0.5em 0.05em 0.5em;
+  margin: 0;
+}
+.default {
+  border-color: #8f9ca3;
+}
+.highlight {
+  border-color: #ffffff;
+}
+.success {
+  border-color: #00cc66;
+}
+.info {
+  border-color: #f0e675;
+}
+.warning {
+  border-color: #ff99dd;
+}
+.error {
+  border-color: #ff006a;
+}
+.passive {
+  border-color: #696969;
+}
+.active {
+  border-color: #0095ff;
+}
+/* Colors */
+.default,
+.fg-default {
+  color: #373839;
+}
+.highlight,
+.fg-highlight {
+  color: #424242;
+}
+.success,
+.fg-success {
+  color: #293d33;
+}
+.info,
+.fg-info {
+  color: #403f34;
+}
+.warning,
+.fg-warning {
+  color: #42383f;
+}
+.error,
+.fg-error {
+  color: #422933;
+}
+.passive,
+.fg-passive {
+  color: #393939;
+}
+.active,
+.fg-active {
+  color: #293742;
+}
+.default,
+.bg-default {
+  background-color: #8f9ca3;
+}
+.highlight,
+.bg-highlight {
+  background-color: #ffffff;
+}
+.success,
+.bg-success {
+  background-color: #00cc66;
+}
+.info,
+.bg-info {
+  background-color: #f0e675;
+}
+.warning,
+.bg-warning {
+  background-color: #ff99dd;
+}
+.error,
+.bg-error {
+  background-color: #ff006a;
+}
+.passive,
+.bg-passive {
+  background-color: #696969;
+}
+.active,
+.bg-active {
+  background-color: #0095ff;
+}
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ * 
+ * Tobias Kiertscher (http://www.mastersign.de)
+ *
+ * LAYOUT
+ * Contains only layout specific stylings, especially the responsive parts.
+ * 
+ * Expects a DIV with ID 'frame' as child in BODY, wrapping all content.
+ * Expects a DIV with ID 'page', wrapping the main content of the page.
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+#frame {
+  text-align: left;
+  padding: 1em;
+  background-color: #2D2D2D;
+  -moz-box-shadow: 0 0 12px #204080;
+  -chrome-box-shadow: 0 0 12px #204080;
+  box-shadow: 0 0 12px #204080;
+}
+header {
+  padding-bottom: 1em;
+  margin-left: 13em;
+}
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+/*** NAV ***/
+nav ul {
+  list-style: none;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+nav .menu-title {
+  font-weight: bold;
+}
+/*** NAV HORIZONTAL ***/
+nav.horizontal {
+  border-bottom: 1px solid #3F486F;
+  width: auto;
+  float: none;
+  padding: 0.25em;
+  margin-left: 13em;
+  margin-right: 0.5em;
+}
+nav.horizontal .menu-title,
+nav.horizontal ul {
+  display: inline-block;
+}
+nav.horizontal .menu-title {
+  padding: 0 0.5em 0 0.25em;
+}
+nav.horizontal li {
+  display: inline-block;
+}
+nav.horizontal li:first-of-type {
+  padding-left: 0.5em;
+}
+nav.horizontal li + li {
+  margin-left: 0;
+}
+nav.horizontal li + li:before {
+  content: '\00A0\2022\00A0\00A0';
+  color: #963f7b;
+}
+/*** NAV VERTICAL ***/
+nav.vertical {
+  border-bottom: none;
+  width: 10em;
+  float: left;
+  padding: 1em 1em 1em 0.5em;
+}
+nav.vertical .menu-title,
+nav.vertical ul {
+  display: block;
+}
+nav.vertical .menu-title {
+  padding: 0 0 0.5em 0;
+}
+nav.vertical li {
+  display: block;
+  padding: 0 0 0.25em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+nav.vertical li li {
+  margin-left: 0.75em;
+  font-size: small;
+  padding: 0;
+}
+/*** NAV FIXED ***/
+nav.fixed {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+nav.fixed > ul {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+#page {
+  margin: 1em 0.5em 1em 12em;
+  padding-left: 1em;
+}
+footer {
+  border-top: 1px solid #3F486F;
+  clear: both;
+}
+@media screen and (min-width: 960px) {
+  #frame {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 720px), screen and (max-device-height: 720px) and (orientation: landscape) {
+  #frame {
+    max-width: 720px;
+  }
+  header {
+    margin-left: 0;
+  }
+  nav.horizontal {
+    margin: 0;
+  }
+  nav.vertical {
+    border-bottom: 1px solid #3F486F;
+    width: auto;
+    float: none;
+    padding: 0.25em;
+    margin: 0;
+  }
+  nav.vertical > .menu-title {
+    padding: 0 0.5em 0 0.25em;
+  }
+  nav.fixed {
+    position: relative;
+  }
+  #page {
+    margin: 1em 0.5em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px), screen and (max-device-height: 720px) and (orientation: landscape) and (min-width: 480px), screen and (max-width: 720px) and (orientation: landscape), screen and (max-device-height: 720px) and (orientation: landscape) and (orientation: landscape) {
+  nav.vertical li {
+    margin: 0.5em;
+    overflow: auto;
+  }
+  nav.vertical > ul {
+    white-space: normal;
+  }
+  nav.vertical > ul ul {
+    display: block;
+  }
+  nav.vertical > ul ul li {
+    display: inline;
+    margin-right: 0;
+    padding: 0;
+  }
+  nav.vertical > ul ul li + li {
+    margin-left: 0;
+  }
+  nav.vertical > ul ul li + li:before {
+    content: '\00A0\2022\00A0\00A0';
+    color: #963f7b;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  #frame {
+    max-width: 480px;
+    padding: 0.25em;
+  }
+  header {
+    padding-bottom: 0;
+    margin: 0;
+  }
+  header h1 {
+    margin: 0;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    font-size: 1.8em;
+    border-bottom: 1px solid #3F486F;
+    text-align: center;
+  }
+  nav.horizontal {
+    margin: 0;
+    text-align: center;
+  }
+  nav.horizontal li,
+  nav.horizontal li:first-of-type {
+    display: block;
+    padding: 0 0 0.15em 0;
+  }
+  nav.horizontal li + li {
+    margin-left: 0;
+  }
+  nav.horizontal li + li:before {
+    content: none;
+  }
+  nav.vertical,
+  nav.horizontal {
+    position: auto;
+    border-bottom: 1px solid #3F486F;
+    width: auto;
+    float: none;
+    padding: 0.5em 0em;
+  }
+  nav.vertical ul {
+    display: block;
+  }
+  nav.vertical > ul {
+    margin: 0.5em;
+  }
+  nav.vertical .menu-title,
+  nav.horizontal .menu-title {
+    display: block;
+    padding: 0 0 0.5em 0;
+  }
+  aside {
+    width: 50%;
+  }
+}
+/**
+* h5smpl - responsive HTML/CSS template
+* https://github.com/mastersign/h5smpl
+*
+* Tobias Kiertscher (http://www.mastersign.de)
+*
+* STYLE ROBOTO
+* Contains a dark theme around the font family "Roboto" from Christian Robertson.
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure figcaption,
+footer,
+aside,
+table,
+blockquote,
+.badge {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  text-decoration: none;
+}
+h6 {
+  font-weight: 300;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 400;
+  font-style: italic;
+}
+mark {
+  font-weight: 400;
+}
+header h1,
+section,
+footer,
+nav,
+nav.vertical,
+nav.horizontal,
+hr {
+  border-color: #3F4F8F;
+}
+blockquote {
+  font-weight: 400;
+  font-style: normal;
+}
+blockquote cite {
+  font-weight: 300;
+  font-size: 0.85em;
+}
+a {
+  font-weight: 400;
+}
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9em;
+}
+figure figcaption {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+footer {
+  font-size: 1em;
+  color: #6F80AF;
+}
+aside {
+  font-size: 0.9em;
+}
+table,
+td,
+th {
+  font-weight: 300;
+}
+thead td,
+tfoot td,
+th {
+  font-weight: 700;
+}

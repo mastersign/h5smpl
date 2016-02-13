@@ -1,0 +1,1013 @@
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ *
+ * modified by Tobias Kiertscher (http://www.mastersign.de/)
+ */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+body {
+  line-height: 100%;
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+code {
+  font-family: monospace;
+}
+ins {
+  text-decoration: underline;
+}
+mark {
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #888;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ *
+ * Tobias Kiertscher (http://www.mastersign.de)
+ * 
+ * VARS
+ * Contains variables which are used in BASE and LAYOUT.
+ * They can be overriden by styles.
+ */
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ *
+ * Tobias Kiertscher (http://www.mastersign.de)
+ * 
+ * BASE
+ * Contains layout independent styling for HTML elements.
+ */
+body {
+  font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+  line-height: 115%;
+  margin: 1em 1.5em 2em 1.5em;
+  background-color: #FFF;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.66em;
+  margin-bottom: 0.33em;
+  line-height: 100%;
+  color: #252525;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Cambria, Times, "Times New Roman", serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5,
+h6 {
+  font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+h6 {
+  font-size: 1em;
+  text-decoration: underline;
+  font-weight: normal;
+}
+hr {
+  clear: both;
+}
+p,
+ul,
+ol,
+dl,
+pre,
+figure,
+table,
+summary {
+  margin-top: 1.00em;
+}
+em {
+  font-style: italic;
+  font-weight: 400;
+}
+strong {
+  font-style: normal;
+  font-weight: 600;
+}
+a {
+  color: #1B58B8;
+  text-decoration: none;
+}
+a:visited {
+  color: #5f8acd;
+}
+a:hover {
+  color: #00296a;
+}
+a:active {
+  color: #1FAEFF;
+}
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited,
+h5 a,
+h5 a:visited,
+h6 a,
+h6 a:visited {
+  color: inherit;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #00296a;
+}
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #1FAEFF;
+}
+img {
+  border: none;
+}
+ins {
+  color: #093;
+  text-decoration: none;
+}
+mark {
+  background-color: #ffffcc;
+  border: 1px solid #ffff4d;
+  border-radius: 0;
+  padding: 0 0.25em;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+}
+del {
+  color: #F44;
+  text-decoration: line-through;
+}
+li {
+  margin-left: 2em;
+}
+li ul,
+li ol {
+  margin-top: 0.33em;
+  margin-bottom: 0.33em;
+}
+li p:first-of-type {
+  margin-top: 0;
+}
+ul li {
+  list-style: disc outside none;
+}
+ul li li {
+  list-style: circle outside none;
+}
+ul li li li {
+  list-style: square outside none;
+}
+ol li {
+  list-style: decimal outside none;
+}
+ol li li {
+  list-style: lower-latin outside none;
+}
+ol li li li {
+  list-style: lower-roman outside none;
+}
+dl {
+  font-weight: 300;
+}
+dt {
+  font-weight: 600;
+  font-style: italic;
+}
+dd {
+  margin-left: 2em;
+  padding-bottom: 0.5em;
+}
+nav li,
+nav ul li,
+nav ul li li,
+nav ul li li li {
+  list-style: none outside none;
+  margin-left: 0;
+}
+nav li ul,
+nav li ol {
+  margin: 0;
+}
+nav li ul li:first-child,
+nav li ol li:first-child {
+  margin-top: 0.2em;
+}
+q {
+  quotes: "\201E" "\201C";
+  font-style: italic;
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+aside,
+pre,
+figure,
+blockquote {
+  background-color: #F8F8F8;
+}
+blockquote {
+  border: none;
+  border-radius: 0;
+  margin: 1em 10% 1em 10%;
+  padding: 0.5em 0.75em;
+  font-style: italic;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+  margin-top: 0.5em;
+  font-style: normal;
+  font-size: 0.8em;
+}
+blockquote > p:first-child {
+  margin-top: 0;
+}
+blockquote blockquote {
+  margin: 1em 0 0.5em 0;
+}
+pre {
+  border: none;
+  border-radius: 0;
+  padding: 0.25em 0.75em 0.55em 0.75em;
+  white-space: pre;
+  overflow: auto;
+}
+code {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: 0.8em;
+  color: #024;
+  background-color: #f2f2f2;
+  padding: 0 0.2em;
+  border: 1px solid #ccd3da;
+  border-radius: 0;
+}
+pre code {
+  background-color: inherit;
+  border: none;
+  border-radius: none;
+  padding: 0;
+}
+/* support for syntax highlighting */
+code span {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 1em;
+}
+code span.kw {
+  font-weight: 700;
+  color: #2673EC;
+}
+code span.fu {
+  color: #004D60;
+}
+code span.dt {
+  color: #B01E00;
+}
+code span.bn {
+  color: #006AC1;
+}
+code span.dv {
+  color: #4617B4;
+}
+code span.fl {
+  color: #7200AC;
+}
+code span.ch {
+  color: #199900;
+}
+code span.st {
+  color: #004A00;
+}
+code span.co {
+  font-weight: 300;
+  font-style: italic;
+  color: #6F6666;
+}
+code span.ot {
+  color: #6F6666;
+}
+code span.al {
+  color: #AE113D;
+  font-weight: 700;
+}
+code span.er {
+  color: #AE113D;
+  font-weight: 700;
+}
+code span.re {
+  color: #024;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0.125em 0.5em 0.125em 0.5em;
+  border: none;
+}
+thead td,
+th,
+tfoot td {
+  font-weight: bold;
+}
+thead {
+  background-color: #f2f2f2;
+}
+tfoot {
+  background-color: #f2f2f2;
+}
+figure {
+  border: none;
+  border-radius: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0.5em;
+  text-align: center;
+  overflow: auto;
+}
+figure figcaption {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+figure table {
+  width: 100%;
+  margin-top: 0;
+}
+section {
+  border-top: 1px solid #AAA;
+  margin-top: 1.5em;
+}
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #888;
+}
+aside {
+  float: right;
+  width: 25%;
+  border: none;
+  border-radius: 0;
+  margin-left: 1em;
+  padding: 0 0.75em 1em 0.75em;
+}
+details {
+  color: #545454;
+  padding-left: 1em;
+  border-left: 1px solid #AAA;
+}
+details p {
+  margin-top: 0.5em;
+}
+details summary {
+  display: block;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 0.5em;
+}
+/* Badge */
+.badge {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 1em 0.5em 0 0;
+  padding: 0.1em 0.75em 0.2em 0.75em;
+  border: 1px solid #696969;
+  border-radius: 0;
+}
+span.badge {
+  display: inline;
+  padding: 0em 0.5em 0.05em 0.5em;
+  margin: 0;
+}
+.default {
+  border-color: #696969;
+}
+.highlight {
+  border-color: #00A4A4;
+}
+.success {
+  border-color: #78BA00;
+}
+.info {
+  border-color: #F4B300;
+}
+.warning {
+  border-color: #E46A19;
+}
+.error {
+  border-color: #AE113D;
+}
+.passive {
+  border-color: #d5d5d5;
+}
+.active {
+  border-color: #2673EC;
+}
+/* Colors */
+.default,
+.fg-default {
+  color: #202020;
+}
+.highlight,
+.fg-highlight {
+  color: #003131;
+}
+.success,
+.fg-success {
+  color: #243800;
+}
+.info,
+.fg-info {
+  color: #493600;
+}
+.warning,
+.fg-warning {
+  color: #442008;
+}
+.error,
+.fg-error {
+  color: #340512;
+}
+.passive,
+.fg-passive {
+  color: #777777;
+}
+.active,
+.fg-active {
+  color: #0b2347;
+}
+.default,
+.bg-default {
+  background-color: #d2d2d2;
+}
+.highlight,
+.bg-highlight {
+  background-color: #b3e4e4;
+}
+.success,
+.bg-success {
+  background-color: #d7eab3;
+}
+.info,
+.bg-info {
+  background-color: #fce8b3;
+}
+.warning,
+.bg-warning {
+  background-color: #f7d2ba;
+}
+.error,
+.bg-error {
+  background-color: #e7b8c5;
+}
+.passive,
+.bg-passive {
+  background-color: #eeeeee;
+}
+.active,
+.bg-active {
+  background-color: #bed5f9;
+}
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ * 
+ * Tobias Kiertscher (http://www.mastersign.de)
+ *
+ * LAYOUT
+ * Contains only layout specific stylings, especially the responsive parts.
+ * 
+ * Expects a DIV with ID 'frame' as child in BODY, wrapping all content.
+ * Expects a DIV with ID 'page', wrapping the main content of the page.
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #696969;
+}
+#frame {
+  text-align: left;
+  padding: 1em;
+  background-color: #FFF;
+  -moz-box-shadow: 0 0 12px #696969;
+  -chrome-box-shadow: 0 0 12px #696969;
+  box-shadow: 0 0 12px #696969;
+}
+header {
+  padding-bottom: 1em;
+  margin-left: 13em;
+}
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+/*** NAV ***/
+nav ul {
+  list-style: none;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+nav .menu-title {
+  font-weight: bold;
+}
+/*** NAV HORIZONTAL ***/
+nav.horizontal {
+  border-bottom: 1px solid #AAA;
+  width: auto;
+  float: none;
+  padding: 0.25em;
+  margin-left: 13em;
+  margin-right: 0.5em;
+}
+nav.horizontal .menu-title,
+nav.horizontal ul {
+  display: inline-block;
+}
+nav.horizontal .menu-title {
+  padding: 0 0.5em 0 0.25em;
+}
+nav.horizontal li {
+  display: inline-block;
+}
+nav.horizontal li:first-of-type {
+  padding-left: 0.5em;
+}
+nav.horizontal li + li {
+  margin-left: 0;
+}
+nav.horizontal li + li:before {
+  content: '\00A0\2022\00A0\00A0';
+  color: #8dacdc;
+}
+/*** NAV VERTICAL ***/
+nav.vertical {
+  border-bottom: none;
+  width: 10em;
+  float: left;
+  padding: 1em 1em 1em 0.5em;
+}
+nav.vertical .menu-title,
+nav.vertical ul {
+  display: block;
+}
+nav.vertical .menu-title {
+  padding: 0 0 0.5em 0;
+}
+nav.vertical li {
+  display: block;
+  padding: 0 0 0.25em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+nav.vertical li li {
+  margin-left: 0.75em;
+  font-size: small;
+  padding: 0;
+}
+/*** NAV FIXED ***/
+nav.fixed {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+nav.fixed > ul {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+#page {
+  margin: 1em 0.5em 1em 12em;
+  padding-left: 1em;
+}
+footer {
+  border-top: 1px solid #AAA;
+  clear: both;
+}
+@media screen and (min-width: 960px) {
+  #frame {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 720px), screen and (max-device-height: 720px) and (orientation: landscape) {
+  #frame {
+    max-width: 720px;
+  }
+  header {
+    margin-left: 0;
+  }
+  nav.horizontal {
+    margin: 0;
+  }
+  nav.vertical {
+    border-bottom: 1px solid #AAA;
+    width: auto;
+    float: none;
+    padding: 0.25em;
+    margin: 0;
+  }
+  nav.vertical > .menu-title {
+    padding: 0 0.5em 0 0.25em;
+  }
+  nav.fixed {
+    position: relative;
+  }
+  #page {
+    margin: 1em 0.5em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px), screen and (max-device-height: 720px) and (orientation: landscape) and (min-width: 480px), screen and (max-width: 720px) and (orientation: landscape), screen and (max-device-height: 720px) and (orientation: landscape) and (orientation: landscape) {
+  nav.vertical li {
+    margin: 0.5em;
+    overflow: auto;
+  }
+  nav.vertical > ul {
+    white-space: normal;
+  }
+  nav.vertical > ul ul {
+    display: block;
+  }
+  nav.vertical > ul ul li {
+    display: inline;
+    margin-right: 0;
+    padding: 0;
+  }
+  nav.vertical > ul ul li + li {
+    margin-left: 0;
+  }
+  nav.vertical > ul ul li + li:before {
+    content: '\00A0\2022\00A0\00A0';
+    color: #8dacdc;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  #frame {
+    max-width: 480px;
+    padding: 0.25em;
+  }
+  header {
+    padding-bottom: 0;
+    margin: 0;
+  }
+  header h1 {
+    margin: 0;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    font-size: 1.8em;
+    border-bottom: 1px solid #AAA;
+    text-align: center;
+  }
+  nav.horizontal {
+    margin: 0;
+    text-align: center;
+  }
+  nav.horizontal li,
+  nav.horizontal li:first-of-type {
+    display: block;
+    padding: 0 0 0.15em 0;
+  }
+  nav.horizontal li + li {
+    margin-left: 0;
+  }
+  nav.horizontal li + li:before {
+    content: none;
+  }
+  nav.vertical,
+  nav.horizontal {
+    position: auto;
+    border-bottom: 1px solid #AAA;
+    width: auto;
+    float: none;
+    padding: 0.5em 0em;
+  }
+  nav.vertical ul {
+    display: block;
+  }
+  nav.vertical > ul {
+    margin: 0.5em;
+  }
+  nav.vertical .menu-title,
+  nav.horizontal .menu-title {
+    display: block;
+    padding: 0 0 0.5em 0;
+  }
+  aside {
+    width: 50%;
+  }
+}
+/**
+* h5smpl - responsive HTML/CSS template
+* https://github.com/mastersign/h5smpl
+*
+* Tobias Kiertscher (http://www.mastersign.de)
+*
+* STYLE METRO
+*/
+body {
+  font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif;
+  font-size: 11.5pt;
+  line-height: 130%;
+}
+h1,
+h2,
+h3,
+h4,
+aside,
+footer {
+  font-family: "Segoe UI", "Calibri Light", Arial, Helvetica, sans-serif;
+}
+h1,
+h2 {
+  font-weight: 200;
+}
+h3,
+h4 {
+  font-weight: 300;
+}
+h5,
+h6 {
+  font-weight: 700;
+}
+h5 {
+  text-decoration: underline;
+}
+h6 {
+  text-decoration: none;
+}
+ins {
+  color: #199900;
+}
+del {
+  color: #B81B1B;
+}
+mark {
+  background-color: #FFFFAA;
+  border: none;
+}
+aside {
+  font-weight: 400;
+  font-size: 9.5pt;
+}
+blockquote {
+  border-left: 0.5em solid #E0E0E0;
+}
+figure figcaption {
+  font-weight: 400;
+  font-size: 10.5pt;
+}
+code {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  line-height: 110%;
+}
+table {
+  background-color: #FFF;
+}
+thead td,
+tfoot td {
+  background-color: #F8F8F8;
+}
+td,
+th,
+thead td,
+tfoot td {
+  border: 1px solid #CCC;
+}
+.badge {
+  font-weight: 300;
+  font-size: 12pt;
+  padding: 0.33em 0.66em;
+}
+.default,
+.highlight,
+.success,
+.info,
+.warning,
+.error,
+.active,
+.passive {
+  border: none;
+  color: #FFF;
+}
+.default {
+  background-color: #696969;
+}
+.highlight {
+  background-color: #00A4A4;
+}
+.success {
+  background-color: #78BA00;
+}
+.info {
+  background-color: #F4B300;
+}
+.warning {
+  background-color: #E46A19;
+}
+.error {
+  background-color: #AE113D;
+}
+.active {
+  background-color: #2673EC;
+}
+.passive {
+  background-color: #AAA;
+}

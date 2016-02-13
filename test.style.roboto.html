@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style.roboto.css" />
+	<title>Style ROBOTO</title>
+</head>
+<body>
+<div id="frame">
+	<header>
+		<h1>h5smple &ndash; Style Demo</h1>
+	</header>
+	<nav class="horizontal">
+		<ul>
+			<li><a href="test.reset.html">Reset</a></li>
+			<li><a href="test.base.html">Base</a></li>
+			<li><a href="test.style.default.html">Default</a></li>
+			<li><a href="test.style.metro.html">Metro</a></li>
+			<li><a href="test.style.science.html">Science</a></li>
+			<li><a href="test.style.roboto.html">Roboto</a></li>
+		</ul>
+	</nav>
+	<nav class="vertical fixed">
+		<ul>
+			<li><a href="#page">Seitenanfang</a></li>
+			<li><a href="#text">Textauszeichnungen</a>
+				<ul>
+					<li><a href="#text-logic-labeling">Logische Gestaltung</a></li>
+					<li><a href="#text-revision">Revision</a></li>
+				</ul>
+			</li>
+			<li><a href="#code">Quelltexte</a></li>
+			<li><a href="#tables">Tabellen</a>
+				<ul>
+					<li><a href="#tables-simple">Einfache Tabelle</a></li>
+					<li><a href="#tables-header-footer">Kopf- und Fußzeile</a></li>
+				</ul>
+			</li>
+			<li><a href="#figures">Grafiken</a></li>
+			<li><a href="#text-badges">Badges</a></li>
+			<li><a href="#headlines">Überschriften</a></li>
+		</ul>
+	</nav>
+	<div id="page">
+	<h1>Inhalt</h1>
+	<p>
+		Im Folgenden kommen einige Beispiele mit verschieden HTML-Elementen.
+		Dabei soll ein Gesamteindruck von komplexen Dokumenten in diesem Stil ermöglicht werden.
+		Dabie ist ein wichtiges Element natürlich der Text selbst, der, in Absätze gegliedert,
+		oft die größte Fläche eines Dokumentes einnimmt. Ein Absatz sollte i.d.R. nicht mehr
+		als 6 Zeilen lang sein, damit sich das Auge des Lesers schnell im Text orientieren kann.
+	</p>
+	<p>
+
+	</p>
+	<section>
+		<h1 id="text">Textauszeichnungen</h1>
+		<p>
+			In diesem Abschnitt werden verschiedene Formen der Textauszeichnung demonstriert.
+		</p>
+		<h2 id="text-logic-labeling">Logische Gestaltung</h2>
+		<p>
+			Durch eine logische Gestaltung des Textes, lassen sich die Zusammenhänge
+			der verschiedenen Aussagen im Text schneller erfassen.
+			Auch wird die Stellung eines Wortes oder Absatzes im Kontext des Textes erkennbar,
+			ohne den Text inhaltlich erfassen zu müssen.
+		</p>
+		<h3>Hervorhebung</h3>
+		<p>
+			Ein Fließtext kann mit verschiedenen Mitteln logisch gestaltet werden.
+			So kann man einzelne Worte oder ganze Passagen z.B. <em>hervorheben</em>.
+			Eine einfache Hervorhebung sollte aber den Textfluss <em>nicht</em> unterbrechen
+			und das Auge nicht ablenken.<br/>
+			Noch kräftiger geht es mit einer <strong>starken Hervorhebung</strong>,
+			durch welche ein Wort noch <strong>stärker</strong> aus dem Text hervorsticht.
+		</p>
+		<h3>Zitat</h3>
+		<p>
+			Ein <q>eingebettes</q> Zitat kann man auch kenntlich machen.
+			Ebenso kann man ein größeres wörtliches Zitat kennzeichnen:
+		</p>
+		<blockquote>
+			Überlege einmal, bevor du gibst, zweimal, bevor du annimmst, und tausendmal, bevor du verlangst.
+			<cite>Marie von Ebner-Eschenbach</cite>
+		</blockquote>
+		<p>
+			Durch Email-Antworten entstehen manchmal verschachtelte Zitate:
+		</p>
+		<blockquote>
+			Hallo Knut,<br/>
+			<br/>
+			zu deiner Email von gestern:<br/>
+			<blockquote>
+				Ich hatte einen schönen Urlaub.
+			</blockquote>
+			Das freut mich, ich konnte mich auch erholen.
+			<blockquote>
+				Hast du Zeit für ein Meeting?<br/>
+				<br/>
+				Wolfgang will sich nochmal mit uns treffen.<br/>
+				<br/>
+				Wolfgang:
+				<blockquote>
+					Mit der Aussage vom letzten Donnerstag habe ich Schwierigkeiten.<br/>
+					Können wir uns nochmal zusammensetzen?
+				</blockquote>
+			</blockquote>
+			Bis bald,<br/>
+			Gustav
+		</blockquote>
+		<h3>Listen</h3>
+		<p>Listen sind sehr gut geeignet, um Stichpunkte oder Aufzählungen darzustellen.</p>
+		<ul>
+			<li>Luft</li>
+			<li>Erde</li>
+			<li>Wasser
+				<ul>
+					<li>Dampf</li>
+					<li>Wolken
+						<ul>
+							<li>Zirrus</li>
+							<li>Stratus</li>
+							<li>Nimbus</li>
+						</ul>
+					</li>
+					<li>Schnee</li>
+					<li>Eis</li>
+				</ul>
+			</li>
+			<li>Feuer</li>
+		</ul>
+		<p>Wenn die Listeneinträge eine feste Reihenfolge haben, können sie auch automatisch nummeriert werden.</p>
+		<ol>
+			<li>Alpha</li>
+			<li>Bravo</li>
+			<li>Charlie
+				<ol>
+					<li>Charli</li>
+					<li>Charlie</li>
+					<li>Charly
+						<ol>
+							<li>Charly</li>
+							<li>Charley</li>
+						</ol>
+					</li>
+					<li>Charley</li>
+				</ol>
+			</li>
+			<li>Delta</li>
+			<li>Echo</li>
+		</ol>
+		<h3>Gruppierungen</h3>
+		<aside>
+			<p>Hier ist ein Text, der an die Seite gestellt wurde.</p>
+		</aside>
+		<p>Durch eine Vorschau-Detail-Darstellung, lassen sich Detailinformationen zu einer Aussage hinzufügen.</p>
+		<details>
+			<summary>Ein Atom ist die kleinste Einheit, in die sich Materie mit mechanischen oder chemischen Mitteln zerlegen lässt.</summary>
+			<p>Zusammen mit dem wissenschaftlich gesicherten Nachweis der Existenz von Atomen zu Anfang des 20. Jahrhunderts wurde bemerkt, dass sie nicht unteilbar sind. Vielmehr bestehen sie aus einer Atomhülle mit negativ geladenen Elektronen und einem positiv geladenen Atomkern. Später fand man heraus, dass der Atomkern aus positiv geladenen Protonen und ungeladenen Neutronen aufgebaut ist. Alle Atomsorten, die im neutralen Zustand dieselbe Anzahl Elektronen und damit Protonen besitzen, gehören zu ein und demselben chemischen Element. Die Anzahl der Neutronen in den Atomkernen eines Elements kann verschieden sein, dabei handelt es sich um Isotope des Elements.</p>
+			<p>Elektronen können durch elektrische Anziehung statt an einen auch an mehrere Atomkerne zugleich gebunden sein und dadurch solche Systeme zusammenhalten: Sie bilden Moleküle, die kleinsten Teile, die eine chemische Verbindung darstellen.</p>
+		</details>
+		<h2 id="text-revision">Revision</h2>
+		<p>
+			In einem Fließtext können Elemente <ins>ein- bzw. hinzugefügt</ins>
+			oder auch aus dem Text <del>enfternt</del> bzw. <del>gelöscht</del> werden.
+			Man kann auch <mark>Teile eines Textes</mark> markieren.
+		</p>
+		<h1 id="code">Quelltexte</h1>
+		<p>
+			In einem Text können einzelne <code>Worte</code> als Schlüsselworte ausgezeichnet werden.
+			Mehrere Zeilen Quelltext werden üblicherweise mit einer Nichtproportionalschrift dargestellt:
+		</p>
+		<pre><code>public static int Main(string[] args)
+{
+    var requestHelp = args.Contains("help");
+    Console.WriteLine(requestHelp ? "Use the livebelt!" : "What do you want?");
+    return 0;
+}</code></pre>
+		<p>Quelltext wird auch oft mit Syntaxhighlighting dargestellt.</p>
+		<pre class="sourceCode sql">
+<code class="sourceCode sql"><span class="co">-- An example with SQL</span>
+<span class="co">-- DDL:</span>
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> demo
+(
+    a <span class="dt">varchar</span>(<span class="dv">255</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>,
+    b <span class="dt">double</span> <span class="dt">precision</span>,
+    c <span class="dt">integer</span> <span class="kw">NOT</span> <span class="kw">NULL</span>
+);
+<span class="co">-- DQL:</span>
+<span class="kw">SELECT</span> a, b, <span class="fu">COUNT</span>(c)
+<span class="kw">FROM</span> demo
+<span class="kw">WHERE</span> a <span class="kw">LIKE</span> <span class="st">&#39;%berlin&#39;</span>
+  <span class="kw">AND</span> b &gt; <span class="fl">200.0</span>
+<span class="kw">ORDER</span> <span class="kw">BY</span> a <span class="kw">ASC</span>
+<span class="kw">GROUP</span> <span class="kw">BY</span> a, b;</code></pre>
+		<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import java.lang;</span>
+
+<span class="co">/* Another example with Java code... */</span>
+<span class="kw">class</span> ABC {
+
+    <span class="kw">private</span> ArrayList&lt;<span class="dt">int</span>&gt; list = <span class="kw">new</span> ArrayList&lt;<span class="dt">int</span>&gt;();
+
+    <span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">main</span>(String args[]) {
+        <span class="co">// Comment</span>
+        <span class="dt">float</span> a = <span class="dv">10</span> + (<span class="dt">float</span>)<span class="fl">200.0</span> * 300f;
+        String b = <span class="st">&quot;xyz&quot;</span>;
+        ArrayList&lt;String&gt; list2 = <span class="kw">new</span> ArrayList&lt;String&gt;();
+        list.<span class="fu">add</span>(a);
+    }
+}</code></pre>
+		<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="co">// Regular expression in JavaScript</span>
+<span class="kw">var</span> r = <span class="ot">/</span><span class="fl">^</span><span class="ot">&lt;div</span><span class="bn">[</span><span class="fl">^</span><span class="bn">&gt;]</span><span class="ot">&gt;</span><span class="fl">(</span><span class="bn">[</span><span class="fl">\s\S</span><span class="bn">]</span><span class="fl">*?)</span><span class="ot">&lt;</span><span class="fl">\/</span><span class="ot">div&gt;</span><span class="fl">$</span><span class="ot">/g</span>;</code></pre>
+		<p>Alle Syntax-Klassen im Überblick:</p>
+		<pre><code><span class="kw">Source Code Keyword</span>
+<span class="dt">Source Code Type</span>
+<span class="fu">Source Code Function Name</span>
+<span class="st">Source Code Literal String "Xyz"</span>
+<span class="ch">Source Code Literal Character 'A'</span>
+<span class="bn">Source Code Literal Hex or Binary 0x12345678</span>
+<span class="dv">Source Code Literal Integer 1234</span>
+<span class="fl">Source Code Literal Float 3.141592</span>
+<span class="co">Source Code Comment</span>
+<span class="ot">Source Code Alternative Comment</span>
+<span class="al">Source Code Generic Error</span>
+<span class="er">Source Code Error</span>
+<span class="re">Source Code RE</span>
+</code></pre>
+	</section>
+	<section>
+		<h1 id="tables">Tabellen</h1>
+		<p>
+			Tabellen können sehr unterschiedliche Größen annehmen.
+			Und gerade bei großen Tabellen ist die Übersichtlichkeit und Lesbarkeit
+			der Werte in den Zellen von erheblicher Bedeutung.
+			Z.B. sollten Linien, welche die Zellen trennen, ausreichend deutlich sein,
+			dass das Auge in den Zeilen und Spalten gehalten wirde. Sie dürfen aber auch
+			nicht über den Zelleninhalt dominieren.
+		</p>
+		<h2 id="tables-simple">Einfache Tabelle</h2>
+		<p>Hier kurz eine einfache Tabelle mit wenig Inhalt.</p>
+		<table>
+			<tr><td></td><th>A</th><th>B</th></tr>
+			<tr><th>X</th><td>00</td><td>01</td></tr>
+			<tr><th>Y</th><td>10</td><td>11</td></tr>
+		</table>
+		<h2 id="tables-header-footer">Kopf- und Fußzeilen</h2>
+		<p>Aber Tabellen können noch mehr...<br/>
+		Kopf- und Fußzeilen verleihen einer Tabelle mehr Übersichtlichkeit.</p>
+		<figure>
+			<table>
+				<thead>
+					<tr><td>Kopfzeile 1</td><td colspan="4">Mehrere Spalten</td></tr>
+					<tr><td>Kopfzeile 2</td><td>A</td><td>B</td><td>C</td><td>D</td></tr>
+				</thead>
+				<tbody>
+				<tr><th>Zeile 1</th><td>Inhalt 1</td><td>Inhalt 2</td><td>Inhalt 3</td><td>Inhalt 4</td></tr>
+				<tr><th>Zeile 2</th><td>Inhalt 5</td><td>Inhalt 6</td><td>Inhalt 7</td><td>Inhalt 8</td></tr>
+				<tr><th>Zeile 3</th><td>Inhalt 9</td><td>Inhalt 10</td><td>Inhalt 11</td><td>Inhalt 12</td></tr>
+				<tr><th>Zeile 4</th><td>Inhalt 13</td><td>Inhalt 14</td><td>Inhalt 15</td><td>Inhalt 16</td></tr>
+				<tr><th>Zeile 5</th><td>Inhalt 17</td><td>Inhalt 18</td><td>Inhalt 19</td><td>Inhalt 20</td></tr>
+				</tbody>
+				<tfoot>
+					<tr><td>Fußzeile</td><td colspan="3">Summe</td><td>210</td></tr>
+				</tfoot>
+			</table>
+			<figcaption>Eine Tabelle mit Kopf- und Fußzeilen.</figcaption>
+		</figure>
+		<h1 id="figures">Grafiken</h1>
+		<p>Wenn eine Grafik in einem Text verwendet wird, sieht das so aus: <img src="img/info.svg" alt="Info" style="width:1em; height:1em;"/>.</p>
+		<p>Eine Grafik kann auch mit einer Beschriftung versehen werden.</p>
+		<figure>
+			<img src="img/info.svg" alt="Info" style="width:180px; height:180px;"/>
+			<figcaption>Infografik</figcaption>
+		</figure>
+		<h1 id="text-badges">Badges</h2>
+		<p>
+			Mit einem Badge, kann man den Status eines Abschnitts kennzeichnen.
+		</p>
+		<div class="badge default">Standard</div>
+		<div class="badge highlight">Hervorgehoben</div>
+		<div class="badge success">Erfolg</div>
+		<div class="badge info">Information</div>
+		<div class="badge warning">Warnung</div>
+		<div class="badge error">Fehler</div>
+		<div class="badge active">Aktiv</div>
+		<div class="badge passive">Passiv</div>
+		<p>
+			Ein Badge kann man auch <span class="badge default">innerhalb</span> eines Textes verwenden.
+		</p>
+		<p>Zwischen zwei Paragraphen ...</p>
+		<div class="badge default">Dazwischen</div>
+		<p>Sieht das dann wie in diesem Fall aus.</p>
+	</section>
+	<section>
+		<h1 id="headlines">Überschrift 1</h1>
+		<p>In diesem Abschnitt werden alle Überschriften dargestellt</p>
+		<h2>Überschrift 2</h2>
+		Hier kommt ein wenig Text.
+		<h3>Überschrift 3</h3>
+		Und hier kommt auch ein wenig Text.
+		<h4>Überschrift 4</h4>
+		In der 4. Ebene gibt es immer noch etwas zu sagen.
+		<h5>Überschrift 5</h5>
+		Und weil das noch nicht detailliert genug war...
+		<h6>Überschrift 6</h6>
+		gehen wir hier in der sechsten Ebene noch mal richtig in die Tiefe.
+	</section>
+	</div>
+	<footer>
+		<p>In der Fußzeile steht häufig ein Copyright-Vermerk.</p>
+	</footer>
+</div>
+</body>
+</html>

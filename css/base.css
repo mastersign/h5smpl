@@ -1,0 +1,660 @@
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ *
+ * modified by Tobias Kiertscher (http://www.mastersign.de/)
+ */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+body {
+  line-height: 100%;
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+code {
+  font-family: monospace;
+}
+ins {
+  text-decoration: underline;
+}
+mark {
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #888;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ *
+ * Tobias Kiertscher (http://www.mastersign.de)
+ * 
+ * VARS
+ * Contains variables which are used in BASE and LAYOUT.
+ * They can be overriden by styles.
+ */
+/**
+ * h5smpl - responsive HTML/CSS template
+ * https://github.com/mastersign/h5smpl
+ *
+ * Tobias Kiertscher (http://www.mastersign.de)
+ * 
+ * BASE
+ * Contains layout independent styling for HTML elements.
+ */
+body {
+  font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+  line-height: 115%;
+  margin: 1em 1.5em 2em 1.5em;
+  background-color: #FFF;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.66em;
+  margin-bottom: 0.33em;
+  line-height: 100%;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Cambria, Times, "Times New Roman", serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5,
+h6 {
+  font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+h6 {
+  font-size: 1em;
+  text-decoration: underline;
+  font-weight: normal;
+}
+hr {
+  clear: both;
+}
+p,
+ul,
+ol,
+dl,
+pre,
+figure,
+table,
+summary {
+  margin-top: 1.00em;
+}
+em {
+  font-style: italic;
+  font-weight: 400;
+}
+strong {
+  font-style: normal;
+  font-weight: 600;
+}
+a {
+  color: #0850ff;
+  text-decoration: none;
+}
+a:visited {
+  color: #5285ff;
+}
+a:hover {
+  color: #042880;
+}
+a:active {
+  color: #ff08a2;
+}
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited,
+h5 a,
+h5 a:visited,
+h6 a,
+h6 a:visited {
+  color: inherit;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #042880;
+}
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #ff08a2;
+}
+img {
+  border: none;
+}
+ins {
+  color: #093;
+  text-decoration: none;
+}
+mark {
+  background-color: #ffffcc;
+  border: 1px solid #ffff4d;
+  border-radius: 0.25em;
+  padding: 0 0.25em;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+}
+del {
+  color: #F44;
+  text-decoration: line-through;
+}
+li {
+  margin-left: 2em;
+}
+li ul,
+li ol {
+  margin-top: 0.33em;
+  margin-bottom: 0.33em;
+}
+li p:first-of-type {
+  margin-top: 0;
+}
+ul li {
+  list-style: disc outside none;
+}
+ul li li {
+  list-style: circle outside none;
+}
+ul li li li {
+  list-style: square outside none;
+}
+ol li {
+  list-style: decimal outside none;
+}
+ol li li {
+  list-style: lower-latin outside none;
+}
+ol li li li {
+  list-style: lower-roman outside none;
+}
+dl {
+  font-weight: 300;
+}
+dt {
+  font-weight: 600;
+  font-style: italic;
+}
+dd {
+  margin-left: 2em;
+  padding-bottom: 0.5em;
+}
+nav li,
+nav ul li,
+nav ul li li,
+nav ul li li li {
+  list-style: none outside none;
+  margin-left: 0;
+}
+nav li ul,
+nav li ol {
+  margin: 0;
+}
+nav li ul li:first-child,
+nav li ol li:first-child {
+  margin-top: 0.2em;
+}
+q {
+  quotes: "\201E" "\201C";
+  font-style: italic;
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+aside,
+pre,
+figure,
+blockquote {
+  background-color: #FFF;
+}
+blockquote {
+  border: 1px solid #DDD;
+  border-radius: 0.5em;
+  margin: 1em 10% 1em 10%;
+  padding: 0.5em 0.75em;
+  font-style: italic;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+  margin-top: 0.5em;
+  font-style: normal;
+  font-size: 0.8em;
+}
+blockquote > p:first-child {
+  margin-top: 0;
+}
+blockquote blockquote {
+  margin: 1em 0 0.5em 0;
+}
+pre {
+  border: 1px solid #DDD;
+  border-radius: 0.5em;
+  padding: 0.25em 0.75em 0.55em 0.75em;
+  white-space: pre;
+  overflow: auto;
+}
+code {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: 0.8em;
+  color: #024;
+  background-color: #f2f2f2;
+  padding: 0 0.2em;
+  border: 1px solid #ccd3da;
+  border-radius: 0.25em;
+}
+pre code {
+  background-color: inherit;
+  border: none;
+  border-radius: none;
+  padding: 0;
+}
+/* support for syntax highlighting */
+code span {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 1em;
+}
+code span.kw {
+  font-weight: 700;
+  color: #06D;
+}
+code span.fu {
+  color: #098;
+}
+code span.dt {
+  color: #903;
+}
+code span.bn {
+  color: #00E;
+}
+code span.dv {
+  color: #40B;
+}
+code span.fl {
+  color: #80A;
+}
+code span.ch {
+  color: #890;
+}
+code span.st {
+  color: #480;
+}
+code span.co {
+  font-weight: 300;
+  font-style: italic;
+  color: #678;
+}
+code span.ot {
+  color: #678;
+}
+code span.al {
+  color: #D00;
+  font-weight: 700;
+}
+code span.er {
+  color: #D02;
+  font-weight: 700;
+}
+code span.re {
+  color: #024;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0.125em 0.5em 0.125em 0.5em;
+  border: 1px solid #DDD;
+}
+thead td,
+th,
+tfoot td {
+  font-weight: bold;
+}
+thead {
+  background-color: #f2f2f2;
+}
+tfoot {
+  background-color: #f2f2f2;
+}
+figure {
+  border: 1px solid #DDD;
+  border-radius: 0.5em;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0.5em;
+  text-align: center;
+  overflow: auto;
+}
+figure figcaption {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+figure table {
+  width: 100%;
+  margin-top: 0;
+}
+section {
+  border-top: 1px solid #AAA;
+  margin-top: 1.5em;
+}
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #888;
+}
+aside {
+  float: right;
+  width: 25%;
+  border: 1px solid #DDD;
+  border-radius: 0.5em;
+  margin-left: 1em;
+  padding: 0 0.75em 1em 0.75em;
+}
+details {
+  color: #545454;
+  padding-left: 1em;
+  border-left: 1px solid #AAA;
+}
+details p {
+  margin-top: 0.5em;
+}
+details summary {
+  display: block;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 0.5em;
+}
+/* Badge */
+.badge {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 1em 0.5em 0 0;
+  padding: 0.1em 0.75em 0.2em 0.75em;
+  border: 1px solid #8f9ca3;
+  border-radius: 0.33em;
+}
+span.badge {
+  display: inline;
+  padding: 0em 0.5em 0.05em 0.5em;
+  margin: 0;
+}
+.default {
+  border-color: #8f9ca3;
+}
+.highlight {
+  border-color: #00d6d6;
+}
+.success {
+  border-color: #33cc00;
+}
+.info {
+  border-color: #f0dc00;
+}
+.warning {
+  border-color: #f57a00;
+}
+.error {
+  border-color: #e90c1f;
+}
+.passive {
+  border-color: #d2d2d2;
+}
+.active {
+  border-color: #0086e6;
+}
+/* Colors */
+.default,
+.fg-default {
+  color: #2b2f31;
+}
+.highlight,
+.fg-highlight {
+  color: #004040;
+}
+.success,
+.fg-success {
+  color: #0f3d00;
+}
+.info,
+.fg-info {
+  color: #484200;
+}
+.warning,
+.fg-warning {
+  color: #492500;
+}
+.error,
+.fg-error {
+  color: #460409;
+}
+.passive,
+.fg-passive {
+  color: #747474;
+}
+.active,
+.fg-active {
+  color: #002845;
+}
+.default,
+.bg-default {
+  background-color: #dde1e3;
+}
+.highlight,
+.bg-highlight {
+  background-color: #b3f3f3;
+}
+.success,
+.bg-success {
+  background-color: #c2f0b3;
+}
+.info,
+.bg-info {
+  background-color: #faf4b3;
+}
+.warning,
+.bg-warning {
+  background-color: #fcd7b3;
+}
+.error,
+.bg-error {
+  background-color: #f8b6bc;
+}
+.passive,
+.bg-passive {
+  background-color: #ededed;
+}
+.active,
+.bg-active {
+  background-color: #b3dbf7;
+}
