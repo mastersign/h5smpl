@@ -32,10 +32,12 @@ Structure
 Styles
 ------
 
-* **Default**
-* **Metro**
-* **Science**
-* **Roboto**
+You can find the [style demo](http://mastersign.github.io/h5smpl) as GitHub Pages for this project.
+
+* [Default](http://mastersign.github.io/h5smpl/test.style.default.html)
+* [Metro](http://mastersign.github.io/h5smpl/test.style.metro.html)
+* [Science](http://mastersign.github.io/h5smpl/test.style.science.html)
+* [Roboto](http://mastersign.github.io/h5smpl/test.style.roboto.html)
 
 License
 -------
