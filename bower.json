@@ -11,13 +11,6 @@
     "responsive"
   ],
   "homepage": "https://github.com/mastersign/h5smpl",
-  "main": [
-    "src/html/template.html",
-    "src/css/style.default.less",
-    "src/css/style.metro.less",
-    "src/css/style.roboto.less",
-    "src/css/style.science.less"
-  ],
   "ignore": [
     "**/.*",
     "gulpfile.js",
