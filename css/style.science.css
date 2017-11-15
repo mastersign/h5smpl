@@ -905,7 +905,7 @@ footer {
 *
 * Tobias Kiertscher (http://www.mastersign.de)
 *
-* STYLE SERIOUS
+* STYLE SCIENCE
 */
 body {
   font-family: "Crimson Text", "Times New Roman", Times, serif;
@@ -922,6 +922,9 @@ p + p {
 }
 p + p.badge {
   text-indent: 0;
+}
+p > math {
+  margin-top: 1em;
 }
 details {
   margin-top: 1em;
