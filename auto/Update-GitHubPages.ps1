@@ -1,7 +1,8 @@
 $MyDir = [IO.Path]::GetDirectoryName($MyInvocation.MyCommand.Definition)
-$ProjDir = [IO.Path]::GetDirectoryName($MyDir)
-$Ghwd = "$ProjDir.gh-pages"
+$projectDir = [IO.Path]::GetDirectoryName($MyDir)
+$ghpagesDir = "$projectDir.gh-pages"
 $branchName = "gh-pages"
+$remoteName = "origin"
 
 $branches = git branch --list | ? { $_ -match $branchName }
 $branchMissing = !$branches
@@ -11,40 +12,41 @@ function Copy-GhpagesContent ($projectDir, $ghpagesDir) {
     cp "$projectDir\dist\test.style.default.html" "$ghpagesDir\index.html"
 }
 
-if ((Test-Path $Ghwd -PathType Container) -and (Test-Path "$Ghwd\.git" -PathType Leaf))
+if ((Test-Path $ghpagesDir -PathType Container) -and (Test-Path "$ghpagesDir\.git" -PathType Leaf))
 {
-    Write-Host "GitHub pages found at $Ghwd"
-    cd $Ghwd
+    Write-Host "GitHub pages found at $ghpagesDir"
+    cd $ghpagesDir
     git reset --hard
     git pull
 }
 else
 {
-    Write-Host "Creating GitHub pages at $Ghwd"
-    if (!(Test-Path $Ghwd -PathType Container))
+    Write-Host "Creating GitHub pages at $ghpagesDir"
+    if (!(Test-Path $ghpagesDir -PathType Container))
     {
-        $_ = mkdir $Ghwd
+        $_ = mkdir $ghpagesDir
     }
     if ($branchMissing)
     {
-        cd $ProjDir
-        git worktree add -f "$Ghwd" master
-        cd $Ghwd
+        cd $projectDir
+        git worktree add -f "$ghpagesDir" master
+        cd $ghpagesDir
         git checkout --orphan $branchName
         git rm -rf .
     }
     else
     {
-        git worktree add "$Ghwd" $branchName
-        cd $Ghwd
+        cd $projectDir
+        git worktree add "$ghpagesDir" $branchName
+        cd $ghpagesDir
         git pull
     }
 }
 
-Remove-Item "$Ghwd\*" -Exclude ".git", ".gitignore" -Recurse -Force
+Remove-Item "$ghpagesDir\*" -Exclude ".git", ".gitignore" -Recurse -Force
 
-Copy-GhpagesContent $ProjDir $Ghwd
+Copy-GhpagesContent $projectDir $ghpagesDir
 
-cd $Ghwd
+cd $ghpagesDir
 git add -A :/
 git commit -m "Automatic Update"
