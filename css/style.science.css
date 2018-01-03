@@ -572,6 +572,7 @@ details summary {
   font-weight: 500;
   color: #201c13;
   padding-bottom: 0.5em;
+  cursor: pointer;
 }
 /* Badge */
 .badge {
