@@ -7,7 +7,9 @@
     "type": "git",
     "url": "git+https://mastersign@github.com/mastersign/h5smpl.git"
   },
-  "main": "dist/css/h5smpl.default.css",
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "HTML5",
     "Template",
