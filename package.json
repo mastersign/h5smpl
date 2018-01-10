@@ -3,10 +3,7 @@
   "version": "0.2.9",
   "description": "An evolving template for a responsive HTML5 page.",
   "readme": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://mastersign@github.com/mastersign/h5smpl.git"
-  },
+  "repository": "github:mastersign/h5smpl",
   "files": [
     "dist/"
   ],
