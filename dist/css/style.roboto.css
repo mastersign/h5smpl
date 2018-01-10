@@ -587,6 +587,12 @@ span.badge {
   padding: 0em 0.5em 0.05em 0.5em;
   margin: 0;
 }
+div.badge p:first-child {
+  margin-top: 0.1em;
+}
+div.badge p {
+  margin-top: 0.5em;
+}
 .default {
   border-color: #8f9ca3;
 }
