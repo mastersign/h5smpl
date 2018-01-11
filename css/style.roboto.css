@@ -682,6 +682,11 @@ div.badge p {
 .bg-active {
   background-color: #0095ff;
 }
+/* References */
+div.references div p {
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+}
 /**
  * h5smpl - responsive HTML/CSS template
  * https://github.com/mastersign/h5smpl

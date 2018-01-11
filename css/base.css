@@ -679,3 +679,8 @@ div.badge p {
 .bg-active {
   background-color: #b3dbf7;
 }
+/* References */
+div.references div p {
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+}
