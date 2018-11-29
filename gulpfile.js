@@ -21,33 +21,38 @@ gulp.task('clear-dist', function () {
 	return del(['dist/*']);
 });
 
-gulp.task('copy-images', ['clear-dist'], function () {
+gulp.task('copy-images', function () {
 	return gulp.src('src/img/*')
 		.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('copy-html', ['clear-dist'], function () {
+gulp.task('copy-html', function () {
 	return gulp.src('src/html/template.html')
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('prepare-tests', ['clear-dist'], function () {
+gulp.task('prepare-tests', function () {
 	return gulp.src('src/html/tests/test.*.html')
 		.pipe(textTransformation(fillBody)())
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('compile-css', ['clear-dist'], function () {
+gulp.task('compile-css', function () {
 	return gulp.src(['src/css/*.less', '!src/css/vars.less', '!src/css/layout.less'])
 		.pipe(less())
 		.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('compile-minified-css', ['compile-css'], function () {
+gulp.task('compile-minified-css', function () {
 	return gulp.src(['dist/css/style.*.css'])
 		.pipe(cssnano())
 		.pipe(rename({ extname: '.mini.css' }))
 		.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('default', ['copy-images', 'copy-html', 'prepare-tests', 'compile-minified-css']);
+gulp.task('default', gulp.series(
+	'clear-dist',
+	gulp.parallel('copy-images', 'copy-html'),
+	'prepare-tests',
+	'compile-css',
+	'compile-minified-css'));
