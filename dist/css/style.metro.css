@@ -182,7 +182,7 @@ select {
  * https://github.com/mastersign/h5smpl
  *
  * Tobias Kiertscher (http://www.mastersign.de)
- * 
+ *
  * BASE
  * Contains layout independent styling for HTML elements.
  */
@@ -247,7 +247,7 @@ pre,
 figure,
 table,
 summary {
-  margin-top: 1.00em;
+  margin-top: 1em;
 }
 em,
 i {
@@ -568,6 +568,9 @@ details summary {
   color: #000;
   padding-bottom: 0.5em;
   cursor: pointer;
+}
+.smallcaps {
+  font-variant: small-caps;
 }
 /* Badge */
 .badge {

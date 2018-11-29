@@ -5,11 +5,6 @@
  *
  * modified by Tobias Kiertscher (http://www.mastersign.de/)
  */
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:700);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,400italic);
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700,700italic);
 html,
 body,
 div,
@@ -187,7 +182,7 @@ select {
  * https://github.com/mastersign/h5smpl
  *
  * Tobias Kiertscher (http://www.mastersign.de)
- * 
+ *
  * BASE
  * Contains layout independent styling for HTML elements.
  */
@@ -195,8 +190,8 @@ body {
   font-family: Calibri, Tahoma, Helvetica, Arial, sans-serif;
   line-height: 115%;
   margin: 1em 1.5em 2em 1.5em;
-  background-color: #f9f8f6;
-  color: #201c13;
+  background-color: hsl(40, 20%, 97%);
+  color: hsl(40, 25%, 10%);
 }
 h1,
 h2,
@@ -207,7 +202,7 @@ h6 {
   margin-top: 0.66em;
   margin-bottom: 0.33em;
   line-height: 100%;
-  color: #201c13;
+  color: hsl(40, 25%, 10%);
 }
 h1,
 h2,
@@ -252,7 +247,7 @@ pre,
 figure,
 table,
 summary {
-  margin-top: 1.00em;
+  margin-top: 1em;
 }
 em,
 i {
@@ -331,7 +326,7 @@ mark {
   border: 1px solid #fdfd4a;
   border-radius: 0.25em;
   padding: 0 0.25em;
-  color: #201c13;
+  color: hsl(40, 25%, 10%);
   font-style: normal;
   font-weight: normal;
 }
@@ -570,9 +565,12 @@ details p {
 details summary {
   display: block;
   font-weight: 500;
-  color: #201c13;
+  color: hsl(40, 25%, 10%);
   padding-bottom: 0.5em;
   cursor: pointer;
+}
+.smallcaps {
+  font-variant: small-caps;
 }
 /* Badge */
 .badge {
@@ -580,7 +578,7 @@ details summary {
   font-size: 0.9em;
   margin: 1em 0.5em 0 0;
   padding: 0.1em 0.75em 0.2em 0.75em;
-  border: 1px solid #8f9ca3;
+  border: 1px solid hsl(200, 10%, 60%);
   border-radius: 0.33em;
 }
 span.badge {
@@ -596,28 +594,28 @@ div.badge p {
   margin-top: 0.5em;
 }
 .default {
-  border-color: #8f9ca3;
+  border-color: hsl(200, 10%, 60%);
 }
 .highlight {
-  border-color: #00d6d6;
+  border-color: hsl(180, 100%, 42%);
 }
 .success {
-  border-color: #33cc00;
+  border-color: hsl(105, 100%, 40%);
 }
 .info {
-  border-color: #f0dc00;
+  border-color: hsl(55, 100%, 47%);
 }
 .warning {
-  border-color: #f57a00;
+  border-color: hsl(30, 100%, 48%);
 }
 .error {
-  border-color: #e90c1f;
+  border-color: hsl(355, 90%, 48%);
 }
 .passive {
   border-color: #cfcfce;
 }
 .active {
-  border-color: #0086e6;
+  border-color: hsl(205, 100%, 45%);
 }
 /* Colors */
 .default,
@@ -704,12 +702,12 @@ div.references div p {
 body {
   margin: 0;
   padding: 0;
-  background-color: #dedbd3;
+  background-color: hsl(40, 15%, 85%);
 }
 #frame {
   text-align: left;
   padding: 1em;
-  background-color: #f9f8f6;
+  background-color: hsl(40, 20%, 97%);
   -moz-box-shadow: 0 0 12px #808080;
   -chrome-box-shadow: 0 0 12px #808080;
   box-shadow: 0 0 12px #808080;
@@ -933,6 +931,90 @@ footer {
 *
 * STYLE SCIENCE
 */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNV.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v9/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v9/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Caption Bold'), local('PTSans-CaptionBold'), url(https://fonts.gstatic.com/s/ptsanscaption/v10/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrkTA-q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(https://fonts.gstatic.com/s/ptsansnarrow/v9/BngRUXNadjH0qYEzV7ab-oWlsbCGwRg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Anonymous Pro Italic'), local('AnonymousPro-Italic'), url(https://fonts.gstatic.com/s/anonymouspro/v11/rP2fp2a15UIB7Un-bOeISG3pHl4G9wn8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Anonymous Pro Bold Italic'), local('AnonymousPro-BoldItalic'), url(https://fonts.gstatic.com/s/anonymouspro/v11/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzs74uz.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anonymous Pro Regular'), local('AnonymousPro-Regular'), url(https://fonts.gstatic.com/s/anonymouspro/v11/rP2Bp2a15UIB7Un-bOeISG3pHls28A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Anonymous Pro Bold'), local('AnonymousPro-Bold'), url(https://fonts.gstatic.com/s/anonymouspro/v11/rP2cp2a15UIB7Un-bOeISG3pFuAT4C7c6A.ttf) format('truetype');
+}
 body {
   font-family: "Crimson Text", "Times New Roman", Times, serif;
   font-weight: 400;
@@ -992,7 +1074,7 @@ h6 {
   margin-top: 1.33em;
 }
 h1 {
-  font-size: 2.0em;
+  font-size: 2em;
 }
 h2 {
   font-size: 1.7em;

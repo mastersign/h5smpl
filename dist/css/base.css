@@ -182,7 +182,7 @@ select {
  * https://github.com/mastersign/h5smpl
  *
  * Tobias Kiertscher (http://www.mastersign.de)
- * 
+ *
  * BASE
  * Contains layout independent styling for HTML elements.
  */
@@ -247,7 +247,7 @@ pre,
 figure,
 table,
 summary {
-  margin-top: 1.00em;
+  margin-top: 1em;
 }
 em,
 i {
@@ -569,13 +569,16 @@ details summary {
   padding-bottom: 0.5em;
   cursor: pointer;
 }
+.smallcaps {
+  font-variant: small-caps;
+}
 /* Badge */
 .badge {
   display: inline-block;
   font-size: 0.9em;
   margin: 1em 0.5em 0 0;
   padding: 0.1em 0.75em 0.2em 0.75em;
-  border: 1px solid #8f9ca3;
+  border: 1px solid hsl(200, 10%, 60%);
   border-radius: 0.33em;
 }
 span.badge {
@@ -591,28 +594,28 @@ div.badge p {
   margin-top: 0.5em;
 }
 .default {
-  border-color: #8f9ca3;
+  border-color: hsl(200, 10%, 60%);
 }
 .highlight {
-  border-color: #00d6d6;
+  border-color: hsl(180, 100%, 42%);
 }
 .success {
-  border-color: #33cc00;
+  border-color: hsl(105, 100%, 40%);
 }
 .info {
-  border-color: #f0dc00;
+  border-color: hsl(55, 100%, 47%);
 }
 .warning {
-  border-color: #f57a00;
+  border-color: hsl(30, 100%, 48%);
 }
 .error {
-  border-color: #e90c1f;
+  border-color: hsl(355, 90%, 48%);
 }
 .passive {
   border-color: #d2d2d2;
 }
 .active {
-  border-color: #0086e6;
+  border-color: hsl(205, 100%, 45%);
 }
 /* Colors */
 .default,
