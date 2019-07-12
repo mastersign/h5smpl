@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var textTransformation = require('gulp-text-simple');
 var rename = require('gulp-rename');
 var less = require('gulp-less');
-var cssnano = require('gulp-cssnano');
+var cleancss = require('gulp-clean-css');
 
 var htmlContent = fs.readFileSync('src/html/content.inc.html', 'utf8');
 
@@ -45,7 +45,7 @@ gulp.task('compile-css', function () {
 
 gulp.task('compile-minified-css', function () {
 	return gulp.src(['dist/css/style.*.css'])
-		.pipe(cssnano())
+		.pipe(cleancss())
 		.pipe(rename({ extname: '.mini.css' }))
 		.pipe(gulp.dest('dist/css'));
 });
